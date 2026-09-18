@@ -1,0 +1,4 @@
+# Frozen hashes identify exact bytes; do not normalize line endings on checkout.
+* -text
+# Historical CSV writers use CRLF. Preserve it and recognize CR as an EOL.
+*.csv whitespace=cr-at-eol
