@@ -1,0 +1,1308 @@
+{
+  "date": "2026-09-18",
+  "existing_files_matched": 145,
+  "csv_files_parsed": 43,
+  "json_files_parsed": 32,
+  "figure_files": 24,
+  "manifest_checks": [
+    {
+      "manifest": "MANIFEST_SHA256.json",
+      "matched_files": 19
+    },
+    {
+      "manifest": "experiments/rssi_admissible_bridge/MANIFEST_SHA256.json",
+      "matched_files": 35
+    },
+    {
+      "manifest": "experiments/rssi_attractor_escape/MANIFEST_SHA256.json",
+      "matched_files": 28
+    },
+    {
+      "manifest": "experiments/rssi_attractor_escape_boundary/MANIFEST_SHA256.json",
+      "matched_files": 28
+    },
+    {
+      "manifest": "experiments/rssi_recapture_dynamics/MANIFEST_SHA256.json",
+      "matched_files": 30
+    }
+  ],
+  "csv_digest_references_matched": 159,
+  "csv_digest_checks": [
+    {
+      "record": "experiments/rssi_admissible_bridge/results/baseline_reproduction.json",
+      "pointer": "/csv_sha256/attractor_checks.csv",
+      "sha256": "913c2c43c28fe744356685282102f759f580abd957710b3bd00384c9048106c5",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/baseline_reproduction.json",
+      "pointer": "/csv_sha256/coherence_diagnostic.csv",
+      "sha256": "7d631575f0ab24e85d1c093e5c85ac70b43d1d765e9e88ef4e217819403e887a",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/coherence_diagnostic.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/baseline_reproduction.json",
+      "pointer": "/csv_sha256/events.csv",
+      "sha256": "49ee7c4eeaa83127851ea20249513092a0b4eee8e04d19afca12085dce78863c",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/events.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/baseline_reproduction.json",
+      "pointer": "/csv_sha256/order_effects.csv",
+      "sha256": "c035784de780e2d66b3a0e6c964d13545eb2b05f342a706d06f87b5257981788",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/order_effects.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/baseline_reproduction.json",
+      "pointer": "/csv_sha256/path_dependence.csv",
+      "sha256": "a1dde66db29966c16c698894e7e60a5aa55e55db704c7552b75c9424a9f5832d",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/path_dependence.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/baseline_reproduction.json",
+      "pointer": "/csv_sha256/recapture_thresholds.csv",
+      "sha256": "a859f2da80dec0d454ed3bed25bd59a1d69f4ab2ed0c6a6d2c29c8abb7e0c718",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/recapture_thresholds.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/baseline_reproduction.json",
+      "pointer": "/csv_sha256/relapse_times.csv",
+      "sha256": "0a5c59d6117594a000ab655c725124f68cca1b408dd76317f74a920e57f936f9",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/relapse_times.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/baseline_reproduction.json",
+      "pointer": "/csv_sha256/sequence_summary.csv",
+      "sha256": "b7629fc448536f0aad5ef2d42ca449009257884b4a6ec0a18f71078228227bac",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/sequence_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/baseline_reproduction.json",
+      "pointer": "/csv_sha256/summary.csv",
+      "sha256": "3fa37b913aa1a9fa57ee3eba3613170b3c192709ade2d8129ec49a7b873f549f",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/baseline_reproduction.json",
+      "pointer": "/csv_sha256/trajectories.csv",
+      "sha256": "3a2a3d7c49b7f9bfb1ccd5af7f7148ddcede917fb7ffb9db32e962776e9cf044",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/execution.json",
+      "pointer": "/csv_sha256/bridge_summary.csv",
+      "sha256": "1cbe0bd9540a51f16f3a7b854d16cdb70b7eedb35ca05f946392e0ee682e1d98",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/bridge_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/execution.json",
+      "pointer": "/csv_sha256/events.csv",
+      "sha256": "5e39cb6b6fbbb76637b299660d029c557d1f01fa02a52ed3b9168e41180fcef4",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/events.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/execution.json",
+      "pointer": "/csv_sha256/minimum_paths.csv",
+      "sha256": "a94e15663e19504d502f04b0e87fc6bc0bb13eb30c31b505fb4b291753587c7f",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/minimum_paths.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/execution.json",
+      "pointer": "/csv_sha256/order_acceptability.csv",
+      "sha256": "6c6e302446353f4f77e58069000cf52f5de652a542075ae4310b42b1596159c9",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/order_acceptability.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/execution.json",
+      "pointer": "/csv_sha256/order_divergence.csv",
+      "sha256": "8ab5f205e520c96779d13e20200f136be726baf2fffc8d348096e7ee39879737",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/order_divergence.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/execution.json",
+      "pointer": "/csv_sha256/trajectories.csv",
+      "sha256": "b1c6ba43482e8ec6d0c33e07acd6414157e3a0aa4a7ce37a3d2d0d16a9442442",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/bridge_summary.csv",
+      "sha256": "1cbe0bd9540a51f16f3a7b854d16cdb70b7eedb35ca05f946392e0ee682e1d98",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/bridge_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/events.csv",
+      "sha256": "5e39cb6b6fbbb76637b299660d029c557d1f01fa02a52ed3b9168e41180fcef4",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/events.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/float_frontier.csv",
+      "sha256": "9f0ff2f43781eb7074d77b201bccd187e030abbc5a8c081601aa0663f552d9be",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/float_frontier.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/graph_edges.csv",
+      "sha256": "78b64bc6838e564dfb15578bcd4e16d78f1c6d4f85dc462ac404756e2eed493d",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/graph_edges.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/graph_nodes.csv",
+      "sha256": "709f7e7e9962567cbfcb87fb8fb041c6b2ec789dc6d62c9970b612b9909c2cdd",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/graph_nodes.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/graph_witness_events.csv",
+      "sha256": "1f4cc1cdcc23691e0fe19b82084a00f0da0ec35eb0ce2e8b4fcfe1f79c5fbd26",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/graph_witness_events.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/minimum_paths.csv",
+      "sha256": "a94e15663e19504d502f04b0e87fc6bc0bb13eb30c31b505fb4b291753587c7f",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/minimum_paths.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/order_acceptability.csv",
+      "sha256": "6c6e302446353f4f77e58069000cf52f5de652a542075ae4310b42b1596159c9",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/order_acceptability.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/order_divergence.csv",
+      "sha256": "8ab5f205e520c96779d13e20200f136be726baf2fffc8d348096e7ee39879737",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/order_divergence.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/reachability_graph.csv",
+      "sha256": "a3bec90c6206450239bac5f182f234aefe55573f6b8ec32466fdb16d79249b3f",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/reachability_graph.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/trajectories.csv",
+      "sha256": "b1c6ba43482e8ec6d0c33e07acd6414157e3a0aa4a7ce37a3d2d0d16a9442442",
+      "matching_artifacts": [
+        "experiments/rssi_admissible_bridge/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/reproducibility/csv_sha256/attractor_checks.csv",
+      "sha256": "913c2c43c28fe744356685282102f759f580abd957710b3bd00384c9048106c5",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/reproducibility/csv_sha256/coherence_diagnostic.csv",
+      "sha256": "7d631575f0ab24e85d1c093e5c85ac70b43d1d765e9e88ef4e217819403e887a",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/coherence_diagnostic.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/reproducibility/csv_sha256/events.csv",
+      "sha256": "49ee7c4eeaa83127851ea20249513092a0b4eee8e04d19afca12085dce78863c",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/events.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/reproducibility/csv_sha256/order_effects.csv",
+      "sha256": "c035784de780e2d66b3a0e6c964d13545eb2b05f342a706d06f87b5257981788",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/order_effects.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/reproducibility/csv_sha256/path_dependence.csv",
+      "sha256": "a1dde66db29966c16c698894e7e60a5aa55e55db704c7552b75c9424a9f5832d",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/path_dependence.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/reproducibility/csv_sha256/recapture_thresholds.csv",
+      "sha256": "a859f2da80dec0d454ed3bed25bd59a1d69f4ab2ed0c6a6d2c29c8abb7e0c718",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/recapture_thresholds.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/reproducibility/csv_sha256/relapse_times.csv",
+      "sha256": "0a5c59d6117594a000ab655c725124f68cca1b408dd76317f74a920e57f936f9",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/relapse_times.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/reproducibility/csv_sha256/sequence_summary.csv",
+      "sha256": "b7629fc448536f0aad5ef2d42ca449009257884b4a6ec0a18f71078228227bac",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/sequence_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/reproducibility/csv_sha256/summary.csv",
+      "sha256": "3fa37b913aa1a9fa57ee3eba3613170b3c192709ade2d8129ec49a7b873f549f",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/reproducibility/csv_sha256/trajectories.csv",
+      "sha256": "3a2a3d7c49b7f9bfb1ccd5af7f7148ddcede917fb7ffb9db32e962776e9cf044",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/reproduction/matched_csv_sha256/adjacent_transitions.csv",
+      "sha256": "25d5fb0da368db54632488c749bbf9870ed7df6c3006fa045b38305d59482b07",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/adjacent_transitions.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/reproduction/matched_csv_sha256/attractor_checks.csv",
+      "sha256": "0a4f745244000b73de2a3b28afa3ed416bfced5046088eb20d29c5915b07aee6",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/reproduction/matched_csv_sha256/boundary_estimates.csv",
+      "sha256": "d5d919d0c791a969b36d6b5a5439348405a65aa1cf7ff157f028674cbd521830",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/boundary_estimates.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/reproduction/matched_csv_sha256/coherence_diagnostic.csv",
+      "sha256": "0f193ef1c503894235c7c4a62db2ff84b26179581ff437b73f13e5b1e2dd0f71",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/coherence_diagnostic.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/reproduction/matched_csv_sha256/coherence_features.csv",
+      "sha256": "726e84cb572a146268321347ea0dc6f12848210d9d2b732c53800a4ecee604d6",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/coherence_features.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/reproduction/matched_csv_sha256/events.csv",
+      "sha256": "b45f70c65837164d43cdde3cdb8888f4a2eb6563ebbe9ebb2dcce981baa54e38",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/events.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/reproduction/matched_csv_sha256/phase_grid.csv",
+      "sha256": "2f949677dd2c02345dd031e573f41497fc626b4e5a3f17b26a7f3a61526a1028",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/phase_grid.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/reproduction/matched_csv_sha256/relapse_times.csv",
+      "sha256": "7523ade77752042ea9885c4cc282d6bd92c0c189cdd9f9606ca501d94edac4c7",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/relapse_times.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/reproduction/matched_csv_sha256/summary.csv",
+      "sha256": "53c2325888ee8788083c1c55447d835530a9519ea639950e0d6bb3527afa02ab",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/reproduction/matched_csv_sha256/trajectories.csv",
+      "sha256": "3d0c714597a9f1cfea29bf30f3fb1190e3a185ac407e3d7e185027afb83f942d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/final_c_regression/validation/checks/0/details/aggregate_summary.csv",
+      "sha256": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/aggregate_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/final_c_regression/validation/checks/0/details/attractor_checks.csv",
+      "sha256": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/final_c_regression/validation/checks/0/details/event_log.csv",
+      "sha256": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/event_log.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/final_c_regression/validation/checks/0/details/summary.csv",
+      "sha256": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/final_c_regression/validation/checks/0/details/trajectories.csv",
+      "sha256": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/final_c_regression/validation/reproducibility/csv_hashes_identical/aggregate_summary.csv",
+      "sha256": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/aggregate_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/final_c_regression/validation/reproducibility/csv_hashes_identical/attractor_checks.csv",
+      "sha256": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/final_c_regression/validation/reproducibility/csv_hashes_identical/event_log.csv",
+      "sha256": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/event_log.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/final_c_regression/validation/reproducibility/csv_hashes_identical/summary.csv",
+      "sha256": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_admissible_bridge/results/validation.json",
+      "pointer": "/regression/validation/regression/validation/final_c_regression/validation/reproducibility/csv_hashes_identical/trajectories.csv",
+      "sha256": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/execution.json",
+      "pointer": "/csv_sha256/aggregate_summary.csv",
+      "sha256": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/aggregate_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/execution.json",
+      "pointer": "/csv_sha256/attractor_checks.csv",
+      "sha256": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/execution.json",
+      "pointer": "/csv_sha256/event_log.csv",
+      "sha256": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/event_log.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/execution.json",
+      "pointer": "/csv_sha256/summary.csv",
+      "sha256": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/execution.json",
+      "pointer": "/csv_sha256/trajectories.csv",
+      "sha256": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/validation.json",
+      "pointer": "/checks/0/details/aggregate_summary.csv",
+      "sha256": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/aggregate_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/validation.json",
+      "pointer": "/checks/0/details/attractor_checks.csv",
+      "sha256": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/validation.json",
+      "pointer": "/checks/0/details/event_log.csv",
+      "sha256": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/event_log.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/validation.json",
+      "pointer": "/checks/0/details/summary.csv",
+      "sha256": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/validation.json",
+      "pointer": "/checks/0/details/trajectories.csv",
+      "sha256": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/validation.json",
+      "pointer": "/reproducibility/csv_hashes_identical/aggregate_summary.csv",
+      "sha256": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/aggregate_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/validation.json",
+      "pointer": "/reproducibility/csv_hashes_identical/attractor_checks.csv",
+      "sha256": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/validation.json",
+      "pointer": "/reproducibility/csv_hashes_identical/event_log.csv",
+      "sha256": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/event_log.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/validation.json",
+      "pointer": "/reproducibility/csv_hashes_identical/summary.csv",
+      "sha256": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape/results/validation.json",
+      "pointer": "/reproducibility/csv_hashes_identical/trajectories.csv",
+      "sha256": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/execution.json",
+      "pointer": "/csv_sha256/adjacent_transitions.csv",
+      "sha256": "25d5fb0da368db54632488c749bbf9870ed7df6c3006fa045b38305d59482b07",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/adjacent_transitions.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/execution.json",
+      "pointer": "/csv_sha256/attractor_checks.csv",
+      "sha256": "0a4f745244000b73de2a3b28afa3ed416bfced5046088eb20d29c5915b07aee6",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/execution.json",
+      "pointer": "/csv_sha256/boundary_estimates.csv",
+      "sha256": "d5d919d0c791a969b36d6b5a5439348405a65aa1cf7ff157f028674cbd521830",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/boundary_estimates.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/execution.json",
+      "pointer": "/csv_sha256/coherence_diagnostic.csv",
+      "sha256": "0f193ef1c503894235c7c4a62db2ff84b26179581ff437b73f13e5b1e2dd0f71",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/coherence_diagnostic.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/execution.json",
+      "pointer": "/csv_sha256/coherence_features.csv",
+      "sha256": "726e84cb572a146268321347ea0dc6f12848210d9d2b732c53800a4ecee604d6",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/coherence_features.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/execution.json",
+      "pointer": "/csv_sha256/events.csv",
+      "sha256": "b45f70c65837164d43cdde3cdb8888f4a2eb6563ebbe9ebb2dcce981baa54e38",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/events.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/execution.json",
+      "pointer": "/csv_sha256/phase_grid.csv",
+      "sha256": "2f949677dd2c02345dd031e573f41497fc626b4e5a3f17b26a7f3a61526a1028",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/phase_grid.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/execution.json",
+      "pointer": "/csv_sha256/relapse_times.csv",
+      "sha256": "7523ade77752042ea9885c4cc282d6bd92c0c189cdd9f9606ca501d94edac4c7",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/relapse_times.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/execution.json",
+      "pointer": "/csv_sha256/summary.csv",
+      "sha256": "53c2325888ee8788083c1c55447d835530a9519ea639950e0d6bb3527afa02ab",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/execution.json",
+      "pointer": "/csv_sha256/trajectories.csv",
+      "sha256": "3d0c714597a9f1cfea29bf30f3fb1190e3a185ac407e3d7e185027afb83f942d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/exp_c_regression.json",
+      "pointer": "/validation/checks/0/details/aggregate_summary.csv",
+      "sha256": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/aggregate_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/exp_c_regression.json",
+      "pointer": "/validation/checks/0/details/attractor_checks.csv",
+      "sha256": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/exp_c_regression.json",
+      "pointer": "/validation/checks/0/details/event_log.csv",
+      "sha256": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/event_log.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/exp_c_regression.json",
+      "pointer": "/validation/checks/0/details/summary.csv",
+      "sha256": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/exp_c_regression.json",
+      "pointer": "/validation/checks/0/details/trajectories.csv",
+      "sha256": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/exp_c_regression.json",
+      "pointer": "/validation/reproducibility/csv_hashes_identical/aggregate_summary.csv",
+      "sha256": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/aggregate_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/exp_c_regression.json",
+      "pointer": "/validation/reproducibility/csv_hashes_identical/attractor_checks.csv",
+      "sha256": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/exp_c_regression.json",
+      "pointer": "/validation/reproducibility/csv_hashes_identical/event_log.csv",
+      "sha256": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/event_log.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/exp_c_regression.json",
+      "pointer": "/validation/reproducibility/csv_hashes_identical/summary.csv",
+      "sha256": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/exp_c_regression.json",
+      "pointer": "/validation/reproducibility/csv_hashes_identical/trajectories.csv",
+      "sha256": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/reproduction/matched_csv_sha256/adjacent_transitions.csv",
+      "sha256": "25d5fb0da368db54632488c749bbf9870ed7df6c3006fa045b38305d59482b07",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/adjacent_transitions.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/reproduction/matched_csv_sha256/attractor_checks.csv",
+      "sha256": "0a4f745244000b73de2a3b28afa3ed416bfced5046088eb20d29c5915b07aee6",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/reproduction/matched_csv_sha256/boundary_estimates.csv",
+      "sha256": "d5d919d0c791a969b36d6b5a5439348405a65aa1cf7ff157f028674cbd521830",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/boundary_estimates.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/reproduction/matched_csv_sha256/coherence_diagnostic.csv",
+      "sha256": "0f193ef1c503894235c7c4a62db2ff84b26179581ff437b73f13e5b1e2dd0f71",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/coherence_diagnostic.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/reproduction/matched_csv_sha256/coherence_features.csv",
+      "sha256": "726e84cb572a146268321347ea0dc6f12848210d9d2b732c53800a4ecee604d6",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/coherence_features.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/reproduction/matched_csv_sha256/events.csv",
+      "sha256": "b45f70c65837164d43cdde3cdb8888f4a2eb6563ebbe9ebb2dcce981baa54e38",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/events.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/reproduction/matched_csv_sha256/phase_grid.csv",
+      "sha256": "2f949677dd2c02345dd031e573f41497fc626b4e5a3f17b26a7f3a61526a1028",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/phase_grid.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/reproduction/matched_csv_sha256/relapse_times.csv",
+      "sha256": "7523ade77752042ea9885c4cc282d6bd92c0c189cdd9f9606ca501d94edac4c7",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/relapse_times.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/reproduction/matched_csv_sha256/summary.csv",
+      "sha256": "53c2325888ee8788083c1c55447d835530a9519ea639950e0d6bb3527afa02ab",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/reproduction/matched_csv_sha256/trajectories.csv",
+      "sha256": "3d0c714597a9f1cfea29bf30f3fb1190e3a185ac407e3d7e185027afb83f942d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/final_c_regression/validation/checks/0/details/aggregate_summary.csv",
+      "sha256": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/aggregate_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/final_c_regression/validation/checks/0/details/attractor_checks.csv",
+      "sha256": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/final_c_regression/validation/checks/0/details/event_log.csv",
+      "sha256": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/event_log.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/final_c_regression/validation/checks/0/details/summary.csv",
+      "sha256": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/final_c_regression/validation/checks/0/details/trajectories.csv",
+      "sha256": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/final_c_regression/validation/reproducibility/csv_hashes_identical/aggregate_summary.csv",
+      "sha256": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/aggregate_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/final_c_regression/validation/reproducibility/csv_hashes_identical/attractor_checks.csv",
+      "sha256": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/final_c_regression/validation/reproducibility/csv_hashes_identical/event_log.csv",
+      "sha256": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/event_log.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/final_c_regression/validation/reproducibility/csv_hashes_identical/summary.csv",
+      "sha256": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_attractor_escape_boundary/results/validation.json",
+      "pointer": "/final_c_regression/validation/reproducibility/csv_hashes_identical/trajectories.csv",
+      "sha256": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/execution.json",
+      "pointer": "/csv_sha256/attractor_checks.csv",
+      "sha256": "913c2c43c28fe744356685282102f759f580abd957710b3bd00384c9048106c5",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/execution.json",
+      "pointer": "/csv_sha256/coherence_diagnostic.csv",
+      "sha256": "7d631575f0ab24e85d1c093e5c85ac70b43d1d765e9e88ef4e217819403e887a",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/coherence_diagnostic.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/execution.json",
+      "pointer": "/csv_sha256/events.csv",
+      "sha256": "49ee7c4eeaa83127851ea20249513092a0b4eee8e04d19afca12085dce78863c",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/events.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/execution.json",
+      "pointer": "/csv_sha256/order_effects.csv",
+      "sha256": "c035784de780e2d66b3a0e6c964d13545eb2b05f342a706d06f87b5257981788",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/order_effects.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/execution.json",
+      "pointer": "/csv_sha256/path_dependence.csv",
+      "sha256": "a1dde66db29966c16c698894e7e60a5aa55e55db704c7552b75c9424a9f5832d",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/path_dependence.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/execution.json",
+      "pointer": "/csv_sha256/recapture_thresholds.csv",
+      "sha256": "a859f2da80dec0d454ed3bed25bd59a1d69f4ab2ed0c6a6d2c29c8abb7e0c718",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/recapture_thresholds.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/execution.json",
+      "pointer": "/csv_sha256/relapse_times.csv",
+      "sha256": "0a5c59d6117594a000ab655c725124f68cca1b408dd76317f74a920e57f936f9",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/relapse_times.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/execution.json",
+      "pointer": "/csv_sha256/sequence_summary.csv",
+      "sha256": "b7629fc448536f0aad5ef2d42ca449009257884b4a6ec0a18f71078228227bac",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/sequence_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/execution.json",
+      "pointer": "/csv_sha256/summary.csv",
+      "sha256": "3fa37b913aa1a9fa57ee3eba3613170b3c192709ade2d8129ec49a7b873f549f",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/execution.json",
+      "pointer": "/csv_sha256/trajectories.csv",
+      "sha256": "3a2a3d7c49b7f9bfb1ccd5af7f7148ddcede917fb7ffb9db32e962776e9cf044",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/attractor_checks.csv",
+      "sha256": "913c2c43c28fe744356685282102f759f580abd957710b3bd00384c9048106c5",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/coherence_diagnostic.csv",
+      "sha256": "7d631575f0ab24e85d1c093e5c85ac70b43d1d765e9e88ef4e217819403e887a",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/coherence_diagnostic.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/events.csv",
+      "sha256": "49ee7c4eeaa83127851ea20249513092a0b4eee8e04d19afca12085dce78863c",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/events.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/order_effects.csv",
+      "sha256": "c035784de780e2d66b3a0e6c964d13545eb2b05f342a706d06f87b5257981788",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/order_effects.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/path_dependence.csv",
+      "sha256": "a1dde66db29966c16c698894e7e60a5aa55e55db704c7552b75c9424a9f5832d",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/path_dependence.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/recapture_thresholds.csv",
+      "sha256": "a859f2da80dec0d454ed3bed25bd59a1d69f4ab2ed0c6a6d2c29c8abb7e0c718",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/recapture_thresholds.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/relapse_times.csv",
+      "sha256": "0a5c59d6117594a000ab655c725124f68cca1b408dd76317f74a920e57f936f9",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/relapse_times.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/sequence_summary.csv",
+      "sha256": "b7629fc448536f0aad5ef2d42ca449009257884b4a6ec0a18f71078228227bac",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/sequence_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/summary.csv",
+      "sha256": "3fa37b913aa1a9fa57ee3eba3613170b3c192709ade2d8129ec49a7b873f549f",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/reproducibility/csv_sha256/trajectories.csv",
+      "sha256": "3a2a3d7c49b7f9bfb1ccd5af7f7148ddcede917fb7ffb9db32e962776e9cf044",
+      "matching_artifacts": [
+        "experiments/rssi_recapture_dynamics/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/reproduction/matched_csv_sha256/adjacent_transitions.csv",
+      "sha256": "25d5fb0da368db54632488c749bbf9870ed7df6c3006fa045b38305d59482b07",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/adjacent_transitions.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/reproduction/matched_csv_sha256/attractor_checks.csv",
+      "sha256": "0a4f745244000b73de2a3b28afa3ed416bfced5046088eb20d29c5915b07aee6",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/reproduction/matched_csv_sha256/boundary_estimates.csv",
+      "sha256": "d5d919d0c791a969b36d6b5a5439348405a65aa1cf7ff157f028674cbd521830",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/boundary_estimates.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/reproduction/matched_csv_sha256/coherence_diagnostic.csv",
+      "sha256": "0f193ef1c503894235c7c4a62db2ff84b26179581ff437b73f13e5b1e2dd0f71",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/coherence_diagnostic.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/reproduction/matched_csv_sha256/coherence_features.csv",
+      "sha256": "726e84cb572a146268321347ea0dc6f12848210d9d2b732c53800a4ecee604d6",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/coherence_features.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/reproduction/matched_csv_sha256/events.csv",
+      "sha256": "b45f70c65837164d43cdde3cdb8888f4a2eb6563ebbe9ebb2dcce981baa54e38",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/events.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/reproduction/matched_csv_sha256/phase_grid.csv",
+      "sha256": "2f949677dd2c02345dd031e573f41497fc626b4e5a3f17b26a7f3a61526a1028",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/phase_grid.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/reproduction/matched_csv_sha256/relapse_times.csv",
+      "sha256": "7523ade77752042ea9885c4cc282d6bd92c0c189cdd9f9606ca501d94edac4c7",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/relapse_times.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/reproduction/matched_csv_sha256/summary.csv",
+      "sha256": "53c2325888ee8788083c1c55447d835530a9519ea639950e0d6bb3527afa02ab",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/reproduction/matched_csv_sha256/trajectories.csv",
+      "sha256": "3d0c714597a9f1cfea29bf30f3fb1190e3a185ac407e3d7e185027afb83f942d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape_boundary/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/final_c_regression/validation/checks/0/details/aggregate_summary.csv",
+      "sha256": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/aggregate_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/final_c_regression/validation/checks/0/details/attractor_checks.csv",
+      "sha256": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/final_c_regression/validation/checks/0/details/event_log.csv",
+      "sha256": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/event_log.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/final_c_regression/validation/checks/0/details/summary.csv",
+      "sha256": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/final_c_regression/validation/checks/0/details/trajectories.csv",
+      "sha256": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/final_c_regression/validation/reproducibility/csv_hashes_identical/aggregate_summary.csv",
+      "sha256": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/aggregate_summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/final_c_regression/validation/reproducibility/csv_hashes_identical/attractor_checks.csv",
+      "sha256": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/attractor_checks.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/final_c_regression/validation/reproducibility/csv_hashes_identical/event_log.csv",
+      "sha256": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/event_log.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/final_c_regression/validation/reproducibility/csv_hashes_identical/summary.csv",
+      "sha256": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/summary.csv"
+      ]
+    },
+    {
+      "record": "experiments/rssi_recapture_dynamics/results/validation.json",
+      "pointer": "/regression/validation/final_c_regression/validation/reproducibility/csv_hashes_identical/trajectories.csv",
+      "sha256": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82",
+      "matching_artifacts": [
+        "experiments/rssi_attractor_escape/results/trajectories.csv"
+      ]
+    },
+    {
+      "record": "results/summary.json",
+      "pointer": "/data_sha256/a_pressure_grid.csv",
+      "sha256": "e779226e81bcf9005efc9753674a4c60f178d380cd725e862364a82099b1cae7",
+      "matching_artifacts": [
+        "results/a_pressure_grid.csv"
+      ]
+    },
+    {
+      "record": "results/summary.json",
+      "pointer": "/data_sha256/a_summary.csv",
+      "sha256": "f4b91926f9deb7cb8f09b417fd3e870a7dbe0584a148f037918aecb289ff7e9f",
+      "matching_artifacts": [
+        "results/a_summary.csv"
+      ]
+    },
+    {
+      "record": "results/summary.json",
+      "pointer": "/data_sha256/a_trials.csv",
+      "sha256": "ad57e4874f95760585bbd22ea2dc3f75289727277ff75dff4b85e0290f21bded",
+      "matching_artifacts": [
+        "results/a_trials.csv"
+      ]
+    },
+    {
+      "record": "results/summary.json",
+      "pointer": "/data_sha256/b_endpoints.csv",
+      "sha256": "9ac999d8948367fc64b69c36c21331175bfb6f44b5df69b8c7cf1c34e30b4040",
+      "matching_artifacts": [
+        "results/b_endpoints.csv"
+      ]
+    },
+    {
+      "record": "results/summary.json",
+      "pointer": "/data_sha256/b_input_events.csv",
+      "sha256": "7c32671e1b5aa64dee5284fd0de78f9c673efe2419c8dec7d2e2f31f94c2b435",
+      "matching_artifacts": [
+        "results/b_input_events.csv"
+      ]
+    },
+    {
+      "record": "results/summary.json",
+      "pointer": "/data_sha256/b_seed_sensitivity.csv",
+      "sha256": "0160eb9639ba309e9d1c10c21521eb06d6ee04cd1e79227a0edb5504552f6347",
+      "matching_artifacts": [
+        "results/b_seed_sensitivity.csv"
+      ]
+    },
+    {
+      "record": "results/summary.json",
+      "pointer": "/data_sha256/b_trajectories.csv",
+      "sha256": "ec71e9aa5ac3b261ef1ff92f4567bc10150955bf57e9dc4eb4cf0168b58064ed",
+      "matching_artifacts": [
+        "results/b_trajectories.csv"
+      ]
+    }
+  ],
+  "all_reference_hashes_match": true,
+  "experiments_run": 0,
+  "regression_tests_run": 0,
+  "historical_test_status": "stored successful validation logs; not rerun"
+}

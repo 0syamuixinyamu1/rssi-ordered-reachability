@@ -1,0 +1,410 @@
+[
+  {
+    "id": 1,
+    "claim": "内部coherenceの改善は外部referenceとの一致を保証しない。",
+    "status": "Supported by synthetic experiment",
+    "supporting_experiment": "B; C–Fで補強",
+    "supporting_artifacts": [
+      {
+        "artifact": "results/b_trajectories.csv",
+        "selector": "fixture=drift_away, policy=gated, tol=0.05, step=1/80",
+        "purpose": "support",
+        "sha256": "ec71e9aa5ac3b261ef1ff92f4567bc10150955bf57e9dc4eb4cf0168b58064ed"
+      },
+      {
+        "artifact": "experiments/rssi_recapture_dynamics/results/coherence_diagnostic.csv",
+        "selector": "保存済みearly-C診断。予測力が常にゼロという別claimは採用しない",
+        "purpose": "support",
+        "sha256": "7d631575f0ab24e85d1c093e5c85ac70b43d1d765e9e88ef4e217819403e887a"
+      }
+    ],
+    "counterexample": "保証への反例：BのCは0.9619349672→0.9999858876、Dは0.6380650328→0.9998658149。claim自体への反例ではない。",
+    "scope": "受理入力agreementというC定義と独立reference距離Dを用いたsynthetic系。",
+    "limitation": "native coherence一般の性質ではない。Cの早期変化が一部fixtureで情報を持つことは否定しない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 2,
+    "claim": "apparent correctionはinternal revisionを保証しない。",
+    "status": "Supported by synthetic experiment",
+    "supporting_experiment": "A; C compliance control",
+    "supporting_artifacts": [
+      {
+        "artifact": "results/a_summary.csv",
+        "selector": "policy=external_only/imaginary_only, high_pressure_cases=726",
+        "purpose": "support",
+        "sha256": "f4b91926f9deb7cb8f09b417fd3e870a7dbe0584a148f037918aecb289ff7e9f"
+      },
+      {
+        "artifact": "results/a_trials.csv",
+        "selector": "初期誤り・正しいhypothesis・pressure_score>=0.6。output_scoreとinternal_scoreを比較",
+        "purpose": "support",
+        "sha256": "ad57e4874f95760585bbd22ea2dc3f75289727277ff75dff4b85e0290f21bded"
+      }
+    ],
+    "counterexample": "保証への反例：external_onlyでは726/726で外部出力が正しく、内部正答は0/726。",
+    "scope": "固定sourceのPython replayと、外部出力を供給するharness。",
+    "limitation": "この分離はhandlerに明示された実装でもある。自律的な欺瞞、隠蔽意図、LLMの内面を実証しない。",
+    "additional_evidence": "コード上の分離にも依存。"
+  },
+  {
+    "id": 3,
+    "claim": "強い外部反証は必ずbeliefを修正する。",
+    "status": "Falsified / rejected hypothesis",
+    "supporting_experiment": "C; Dの初回gate条件との対照",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_attractor_escape/results/event_log.csv",
+        "selector": "run_id=descending_bridge_7_T2_repeated_1.0, phase=injection, step=10",
+        "purpose": "counterexample",
+        "sha256": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101"
+      }
+    ],
+    "counterexample": "S=1でもb=.775、D=.225の時のsupportは.69<.75。外部から配送済みなのにevidence_threshold_rejectionとなりbは不変。",
+    "scope": "現在のevidence handler全イベントに対する『必ず』を棄却。",
+    "limitation": "初回D=1ならS=1は改訂される。入力振幅、social pressure、証拠strength Sを混同しない。通常gateへの提示と強制配送も区別する。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 4,
+    "claim": "外部反証を繰り返せばPersistent Escapeになる。",
+    "status": "Falsified / rejected hypothesis",
+    "supporting_experiment": "C/D",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_attractor_escape_boundary/results/summary.csv",
+        "selector": "group=primary, regime=descending_bridge, evidence_strength=1.0, frequency=16",
+        "purpose": "counterexample",
+        "sha256": "53c2325888ee8788083c1c55447d835530a9519ea639950e0d6bb3527afa02ab"
+      },
+      {
+        "artifact": "experiments/rssi_attractor_escape_boundary/results/relapse_times.csv",
+        "selector": "S=1, F=1とF>1の保存済みT_relapse",
+        "purpose": "support",
+        "sha256": "7523ade77752042ea9885c4cc282d6bd92c0c189cdd9f9606ca501d94edac4c7"
+      }
+    ],
+    "counterexample": "S=1、F=16でも5/5がRelapse。F=1のT=39に対しF>1はT=79で、最終Dは1。",
+    "scope": "固定された有限注入windowと検証済みF∈{1,2,3,4,8,16}。",
+    "limitation": "無限頻度、永久介入、別時刻配置でも必ず失敗するとは言えない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 5,
+    "claim": "post-injection input distributionだけでRecaptureを説明できる。",
+    "status": "Falsified / rejected hypothesis",
+    "supporting_experiment": "E/F",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_recapture_dynamics/results/order_effects.csv",
+        "selector": "multiset_group=bridge_values。same_multiset=Trueの比較",
+        "purpose": "counterexample",
+        "sha256": "c035784de780e2d66b3a0e6c964d13545eb2b05f342a706d06f87b5257981788"
+      },
+      {
+        "artifact": "experiments/rssi_admissible_bridge/results/order_divergence.csv",
+        "selector": "同じ120 tokenの各順序",
+        "purpose": "support",
+        "sha256": "8ab5f205e520c96779d13e20200f136be726baf2fffc8d348096e7ee39879737"
+      }
+    ],
+    "counterexample": "同じbridge multisetでdescendingはRelapse、ascending/shuffledはPersistent。qもmultisetも一致する。",
+    "scope": "distributionを順序を捨てた値の経験分布・割合と解したclaim。",
+    "limitation": "時間順序を含む完全な同時分布なら別命題となる。『distributionが無関係』とは結論しない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 6,
+    "claim": "同一multisetでも順序が結果を変え得る。",
+    "status": "Supported by synthetic experiment",
+    "supporting_experiment": "E/F",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_admissible_bridge/results/order_divergence.csv",
+        "selector": "seed=7, descending対ascending: first_divergence_step=1",
+        "purpose": "support",
+        "sha256": "8ab5f205e520c96779d13e20200f136be726baf2fffc8d348096e7ee39879737"
+      },
+      {
+        "artifact": "experiments/rssi_admissible_bridge/results/order_acceptability.csv",
+        "selector": "x=.95の同一token、descending step2対ascending step119",
+        "purpose": "support",
+        "sha256": "6c6e302446353f4f77e58069000cf52f5de652a542075ae4310b42b1596159c9"
+      }
+    ],
+    "counterexample": "『常に変わる』にはEの60R/60O multisetが反例。15 endpoint比較で分類差は0。",
+    "scope": "存在命題。同じ値でも先行beliefが異なり、同じtokenの受理が変わる。",
+    "limitation": "有限の順序・5つの固定shuffle。任意順序で違いが出る主張ではない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 7,
+    "claim": "同じ最終入力なら最終beliefも同じになる。",
+    "status": "Falsified / rejected hypothesis",
+    "supporting_experiment": "E; F controlで継承",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_recapture_dynamics/results/path_dependence.csv",
+        "selector": "全5seed, final_input=0, fast v=1 / slow v=.025",
+        "purpose": "counterexample",
+        "sha256": "a1dde66db29966c16c698894e7e60a5aa55e55db704c7552b75c9424a9f5832d"
+      }
+    ],
+    "counterexample": "最終入力0でもfastはD_final=0、slowはD_final=1。全5組で分類が異なる。",
+    "scope": "同じ注入条件・初期状態から異なる入力履歴を通るscalar系。",
+    "limitation": "同じ現在beliefと同じ次入力なら同じ更新。追加の記憶変数や数学的ヒステリシスを証明しない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 8,
+    "claim": "旧anchor入力の量がRecaptureを決める。",
+    "status": "Falsified / rejected hypothesis",
+    "supporting_experiment": "E/F",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_admissible_bridge/results/bridge_summary.csv",
+        "selector": "condition_id=control_abrupt0 / minimum_float_frontier、各5seed",
+        "purpose": "counterexample",
+        "sha256": "1cbe0bd9540a51f16f3a7b854d16cdb70b7eedb35ca05f946392e0ee682e1d98"
+      }
+    ],
+    "counterexample": "120回の0は全拒絶しb=1のまま。21入力の完全bridgeは全受理してb=0。",
+    "scope": "提示量だけによる決定・単調な保証を棄却。bridgeには中間値が含まれる。",
+    "limitation": "入力数に一切効果がないというclaimではない。acceptability・値・順序を保持した純粋な用量効果推定でもない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 9,
+    "claim": "逐次的に受理可能なpathがRecaptureに重要である。",
+    "status": "Supported by synthetic experiment",
+    "supporting_experiment": "B/E/F",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_admissible_bridge/results/bridge_summary.csv",
+        "selector": "complete/broken bridge、redundant deletion、order_alternating",
+        "purpose": "support",
+        "sha256": "1cbe0bd9540a51f16f3a7b854d16cdb70b7eedb35ca05f946392e0ee682e1d98"
+      },
+      {
+        "artifact": "experiments/rssi_admissible_bridge/PROTOCOL.md",
+        "selector": "Analytical candidates before simulation",
+        "purpose": "support",
+        "sha256": "0d750c8694df9674fe1fe476183bac440abcff48cf44e87e2e02ac1a442ee6bb"
+      }
+    ],
+    "counterexample": "『静的pathさえあればよい』はascendingが反例。『拒絶が一回でもあれば不可』はalternatingが反例。",
+    "scope": "実際の提示順序に沿う状態遷移。全受理列の隣接gate条件と終点条件には解析的必要十分性がある。",
+    "limitation": "局所的に受理可能なfree random prefixが必ず指定targetに届くわけではない。",
+    "additional_evidence": "条件を明示したscalar更新則ではAnalytically supportedの部分もある。"
+  },
+  {
+    "id": 10,
+    "claim": "実数scalar gateでは最短到達長に L_min >= ceil(|b0-b*|/τ) が成立する。",
+    "status": "Analytically supported",
+    "supporting_experiment": "F解析",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_admissible_bridge/PROTOCOL.md",
+        "selector": "Analytical candidates: triangle inequality / free intermediate values",
+        "purpose": "support",
+        "sha256": "0d750c8694df9674fe1fe476183bac440abcff48cf44e87e2e02ac1a442ee6bb"
+      },
+      {
+        "artifact": "experiments/rssi_admissible_bridge/EXPERIMENT_REPORT.md",
+        "selector": "Minimum Bridgeの実数とbinary64の分離",
+        "purpose": "support",
+        "sha256": "23b190fa26ba20a5794781fc7e33f3e48ba2d7fff9f3a8f68d1a1dd63d358798"
+      }
+    ],
+    "counterexample": "下限への反例はない。有限alphabetや固定順序では等号達成が失われ得る。",
+    "scope": "τ>0、実数演算。始点とtarget間の入力を自由に選べる区間なら下限を等分経路で達成できる。",
+    "limitation": "binary64の端点判定、離散graph、実AIへの無条件移植はしない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 11,
+    "claim": "現在のbinary64実装でb=1から厳密な0への最短長は21である。",
+    "status": "Implementation-dependent",
+    "supporting_experiment": "F解析＋simulation witness",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_admissible_bridge/results/float_frontier.csv",
+        "selector": "step20の最小残差>0、step21=0",
+        "purpose": "support",
+        "sha256": "9f0ff2f43781eb7074d77b201bccd187e030abbc5a8c081601aa0663f552d9be"
+      },
+      {
+        "artifact": "experiments/rssi_admissible_bridge/results/analysis.json",
+        "selector": "float_L_min=21, frontier_step20",
+        "purpose": "support",
+        "sha256": "835eccb86dceee3343d9bae93b583441e59f831bbac6c1f26372bfce4b59d969"
+      },
+      {
+        "artifact": "experiments/rssi_admissible_bridge/results/validation.json",
+        "selector": "exact_real_lower_bound_and_binary64_endpoint_certificate",
+        "purpose": "support",
+        "sha256": "84b69da182d97818fb3c99857d261e2fe7f2d195c4fa1fc026aee7e99f183684"
+      }
+    ],
+    "counterexample": "一般化への対照：実数τ=1/20では20。離散i/40 graphでは28。",
+    "scope": "現在のbinary64表現・丸め・tol=.05・状態域[0,1]・厳密target0。frontier単調性と端点証明書による最小性。",
+    "limitation": "単なる5seedの最小観測値ではない。21を普遍的なRSSI定数やRelapse時刻と扱わない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 12,
+    "claim": "静的graphが連結なら、任意の入力順序でもRecaptureする。",
+    "status": "Falsified / rejected hypothesis",
+    "supporting_experiment": "E/F",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_admissible_bridge/results/bridge_summary.csv",
+        "selector": "同一multisetのcontrol_E_gradual / order_ascending、unordered_graph_path_exists=True",
+        "purpose": "counterexample",
+        "sha256": "1cbe0bd9540a51f16f3a7b854d16cdb70b7eedb35ca05f946392e0ee682e1d98"
+      },
+      {
+        "artifact": "experiments/rssi_admissible_bridge/results/order_divergence.csv",
+        "selector": "same_multiset=Trueの全比較",
+        "purpose": "support",
+        "sha256": "8ab5f205e520c96779d13e20200f136be726baf2fffc8d348096e7ee39879737"
+      }
+    ],
+    "counterexample": "同じ静的値集合に1→0 pathがあっても、ascending/shuffledでは今回targetに届かない。",
+    "scope": "静的存在量化と、固定時間順序の実行を区別する。",
+    "limitation": "適切な順序なら到達可能というgraphの意味は棄却されない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 13,
+    "claim": "Fの固定noise条件ではη=.006で2/5、η=.012で0/5がtargetへ到達した。",
+    "status": "Supported by finite fixtures only",
+    "supporting_experiment": "F",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_admissible_bridge/results/bridge_summary.csv",
+        "selector": "family=noise, noise=.006/.012、target_reached",
+        "purpose": "support",
+        "sha256": "1cbe0bd9540a51f16f3a7b854d16cdb70b7eedb35ca05f946392e0ee682e1d98"
+      }
+    ],
+    "counterexample": "η=.001/.004は5/5。全noiseで一様に不可能という命題ではない。",
+    "scope": "25入力の単調bridge、5固定seed、内点noise、終点0固定。",
+    "limitation": "到達確率の精密推定、普遍noise閾値、noiseによる追加必要path長は未支持。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 14,
+    "claim": "実LLMにも順序感度を独立に監査する価値があるかもしれない。",
+    "status": "Suggestive only",
+    "supporting_experiment": "E/Fは検討動機のみ",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_recapture_dynamics/EXPERIMENT_REPORT.md",
+        "selector": "order/path results and unsupported claims",
+        "purpose": "scope boundary",
+        "sha256": "f5af54ea12e73424621d146f6defaa0ab493092ce4ef282477515422120d6cb6"
+      }
+    ],
+    "counterexample": "この系列には実LLMの反例も支持例もない。",
+    "scope": "次工程の問いとしての示唆。検証済みの移植可能性ではない。",
+    "limitation": "実LLMの出力変化をlatent belief更新・RSSI・同じgateの証拠と呼ばない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 15,
+    "claim": "A〜Fは実LLM、RSI一般、人間のbelief、native Hoho再帰を実証した。",
+    "status": "Not supported",
+    "supporting_experiment": "該当する実験なし",
+    "supporting_artifacts": [
+      {
+        "artifact": "results/summary.json",
+        "selector": "native_julia_executed=False; declared minimal model",
+        "purpose": "scope boundary",
+        "sha256": "3e60623e525d9fcc77504ffca830c4e95ab5b2533cd16e4871290017d2f19c9a"
+      },
+      {
+        "artifact": "experiments/rssi_attractor_escape/results/native_status.json",
+        "selector": "native cross-check未完走",
+        "purpose": "scope boundary",
+        "sha256": "80344f60592f6045e1d8f16dd2546cbd45f0a9f5d827af83b9779c85a58bc5b2"
+      }
+    ],
+    "counterexample": "未測定のため反証ではなく未支持。",
+    "scope": "RSSIという名称と、実際のrecursive self-improvementの実証を分離。",
+    "limitation": "LLM/human/native validationを後から実施済みと扱わない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 16,
+    "claim": "既知入力の受理agreement平均Cは、実数上、定義される場合1−tol以上である。",
+    "status": "Analytically supported",
+    "supporting_experiment": "B/C定義; E/Fで保持",
+    "supporting_artifacts": [
+      {
+        "artifact": "run_experiments.py",
+        "selector": "offerとaccepted_agreement",
+        "purpose": "support",
+        "sha256": "f160de63ea03cc22979cafa3073ccfa97a61c4bb92692855b69855907973aa1e"
+      },
+      {
+        "artifact": "experiments/rssi_attractor_escape/run_experiment.py",
+        "selector": "Recorderで受理されたnormal入力のみCを計算",
+        "purpose": "support",
+        "sha256": "a02be758b6eaf6275bbfcecb918eb5bd3714ce32e250f671398355587217b40f"
+      }
+    ],
+    "counterexample": "受理ゼロではCは未定義。未知topicを含む無条件受理へ同じ下限を主張しない。",
+    "scope": "既知scalar・実数gate・agreement=1−|x−b_before|の定義からの帰結。",
+    "limitation": "binary64丸め誤差を伴う。高Cが独立な真理指標だという結論にはならない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 17,
+    "claim": "Reference integrityはadversarial code rewritingにも保証される。",
+    "status": "Not supported",
+    "supporting_experiment": "その攻撃実験なし",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_attractor_escape/reference.json",
+        "selector": "固定domain/reference",
+        "purpose": "scope boundary",
+        "sha256": "94a48d42105e9fa6fa421c003a68d1004a6a2a528005db2ac3ec1f4ebac71b34"
+      },
+      {
+        "artifact": "experiments/rssi_admissible_bridge/PROTOCOL.md",
+        "selector": "trusted harness / reference domain negative checks",
+        "purpose": "scope boundary",
+        "sha256": "0d750c8694df9674fe1fe476183bac440abcff48cf44e87e2e02ac1a442ee6bb"
+      }
+    ],
+    "counterexample": "policy API内にreference改変操作がないことは、環境全体の改変に対する証明ではない。",
+    "scope": "固定R0、domain、hashを保持した信頼されたharness内。",
+    "limitation": "Ideal E8の別実験をRSSIへの攻撃耐性検証として加算しない。",
+    "additional_evidence": ""
+  },
+  {
+    "id": 18,
+    "claim": "Sの境界.58/.59はRSSI一般のcritical constantである。",
+    "status": "Not supported",
+    "supporting_experiment": "Dが支持するのは実装内の境界だけ",
+    "supporting_artifacts": [
+      {
+        "artifact": "experiments/rssi_attractor_escape_boundary/results/boundary_estimates.csv",
+        "selector": "初回D=1での有限grid bracket (.58,.59]",
+        "purpose": "scope boundary",
+        "sha256": "d5d919d0c791a969b36d6b5a5439348405a65aa1cf7ff157f028674cbd521830"
+      },
+      {
+        "artifact": "experiments/rssi_attractor_escape/run_experiment.py",
+        "selector": "support=.6*S+.4*D_before >= .75",
+        "purpose": "scope boundary",
+        "sha256": "a02be758b6eaf6275bbfcecb918eb5bd3714ce32e250f671398355587217b40f"
+      }
+    ],
+    "counterexample": "Cでは同じS=1でも後続D=.225の時にrejectされる。",
+    "scope": "初回D=1に限った実数support式なら閾値7/12。有限gridで.58/.59を挟む。",
+    "limitation": "新しい普遍相転移の発見や数学的相転移の証明ではない。",
+    "additional_evidence": ""
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "validation_date": "2026-09-18",
+  "status": "passed",
+  "environment": {
+    "python": "3.12.14",
+    "git": "2.51.1",
+    "gzip": "1.12"
+  },
+  "frozen_artifacts": {
+    "manifest_entries": 74,
+    "csv_artifacts": 43,
+    "csv_data_rows": 745735,
+    "deterministically_compressed_csvs": 9,
+    "source_identical_uncompressed_artifacts": 73,
+    "metadata_path_normalizations": 1
+  },
+  "portable_reproduction": {
+    "command": "python scripts/reproduce.py --series all",
+    "status": "passed",
+    "series": ["a", "b", "c", "d", "e", "f"],
+    "matched_files": 45,
+    "matched_files_by_series": {
+      "a": 3,
+      "b": 4,
+      "c": 5,
+      "d": 10,
+      "e": 11,
+      "f": 12
+    },
+    "outputs_retained": false,
+    "frozen_results_overwritten": false
+  },
+  "publication_audit": {
+    "snapshot_validator": "passed",
+    "snapshot_files": 151,
+    "representative_A_to_F_claim_values": "passed",
+    "markdown_links": "passed",
+    "markdown_links_checked": 351,
+    "claim_categories_and_scope_guards": "passed",
+    "claim_categories_checked": 7,
+    "license_and_citation": "passed",
+    "private_path_and_secret_patterns": "passed",
+    "text_files_scanned": 81,
+    "gzip_integrity": "passed"
+  },
+  "experiments_added": 0,
+  "new_metrics_added": 0,
+  "claim_freeze_changed": false,
+  "native_julia_validation_claimed": false,
+  "notes": [
+    "The reproducer reran only the existing frozen A-F generators in temporary directories.",
+    "The only non-byte-identical publication transform on an uncompressed artifact is removal of machine-specific command paths from F analysis.json; its scientific fields are unchanged.",
+    "The complete public snapshot file hashes are stored in SNAPSHOT_SHA256.json."
+  ]
+}

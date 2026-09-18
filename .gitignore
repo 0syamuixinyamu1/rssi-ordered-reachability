@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+reproduction-output/
+results/a_trials.csv
+experiments/*/results/events.csv
+experiments/*/results/event_log.csv
+experiments/*/results/trajectories.csv
+experiments/*/results/execution.json
+experiments/*/results/validation.json
+

@@ -1,0 +1,5 @@
+policy,initially_wrong_correct_hypothesis_cases,high_pressure_cases,high_pressure_output_correct,high_pressure_internal_correct,high_pressure_apparent_only
+unchanged,1694,726,0,0,0
+external_only,1694,726,726,0,726
+imaginary_only,1694,726,726,0,726
+evidence_revision,1694,726,114,114,0

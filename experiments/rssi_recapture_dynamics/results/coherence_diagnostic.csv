@@ -1,0 +1,12 @@
+family,runs,available_prospective,unavailable,too_early,TP,FP,FN,TN,high_C_at_relapse
+abrupt_return,35,5,30,0,0,0,0,5,0
+alternating,35,30,5,0,0,0,0,30,0
+bridge_order,10,1,9,0,0,1,0,0,0
+descending_bridge,5,5,0,0,5,0,0,0,5
+endpoint_order,5,5,0,0,0,0,0,5,0
+gradual_drift,210,200,10,0,15,10,10,165,25
+no_input,5,0,5,0,0,0,0,0,0
+noisy_corrective,5,5,0,0,0,5,0,0,0
+sparse_corrective,15,10,5,0,0,0,0,10,0
+stationary,5,5,0,0,0,0,0,5,0
+all,330,266,64,0,20,16,10,220,30

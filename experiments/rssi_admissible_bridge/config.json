@@ -1,0 +1,16 @@
+{
+  "seeds": [7, 17, 29, 41, 53],
+  "tol": 0.05,
+  "reference": 1.0,
+  "old_anchor": 0.0,
+  "strength": 1.0,
+  "frequency": 1,
+  "horizon": 120,
+  "uniform_lengths": [19, 20, 21],
+  "delta_decimal_values": [0.025, 0.049, 0.0499, 0.05, 0.0501, 0.051],
+  "include_nextafter_tol": true,
+  "noise_levels": [0.0, 0.001, 0.004, 0.006, 0.012],
+  "graph_denominators": [20, 40, 80],
+  "graph_tolerances": [0.049, 0.05, 0.051],
+  "random_prefix_steps": 64
+}

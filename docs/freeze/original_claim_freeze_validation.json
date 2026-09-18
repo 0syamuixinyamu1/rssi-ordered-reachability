@@ -1,0 +1,110 @@
+{
+  "date": "2026-09-18",
+  "validation_type": "documentation and artifact audit only",
+  "experiments_executed": 0,
+  "old_validators_executed": 0,
+  "old_regression_tests_executed": 0,
+  "passed_groups": 7,
+  "checks": [
+    {
+      "name": "six_required_documents_complete",
+      "passed": true,
+      "detail": [
+        "RSSI_A_F_SYNTHESIS.md",
+        "RSSI_EXPERIMENT_MAP.md",
+        "RSSI_CLAIM_LEDGER.md",
+        "RSSI_LIMITATIONS.md",
+        "RSSI_MATHEMATICAL_CORE.md",
+        "RSSI_NEXT_STEP_DECISION.md"
+      ]
+    },
+    {
+      "name": "local_artifact_links_resolve",
+      "passed": true,
+      "detail": 181
+    },
+    {
+      "name": "18_claims_required_fields_and_evidence_hashes",
+      "passed": true,
+      "detail": 18
+    },
+    {
+      "name": "major_raw_numbers_match_frozen_document_values",
+      "passed": true,
+      "detail": 27
+    },
+    {
+      "name": "A_to_F_report_numeric_anchors",
+      "passed": true,
+      "detail": [
+        {
+          "artifact": "RESULTS_JA.md",
+          "numeric_anchors_matched": [
+            27104,
+            625,
+            9600,
+            13440,
+            720
+          ]
+        },
+        {
+          "artifact": "experiments/rssi_attractor_escape/EXPERIMENT_REPORT.md",
+          "numeric_anchors_matched": [
+            54,
+            10167,
+            20130
+          ]
+        },
+        {
+          "artifact": "experiments/rssi_attractor_escape_boundary/EXPERIMENT_REPORT.md",
+          "numeric_anchors_matched": [
+            920,
+            176710,
+            346450
+          ]
+        },
+        {
+          "artifact": "experiments/rssi_recapture_dynamics/EXPERIMENT_REPORT.md",
+          "numeric_anchors_matched": [
+            330,
+            44435,
+            48880
+          ]
+        },
+        {
+          "artifact": "experiments/rssi_admissible_bridge/EXPERIMENT_REPORT.md",
+          "numeric_anchors_matched": [
+            170,
+            22610,
+            11940
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A_to_F_and_Ideal_unchanged",
+      "passed": true,
+      "detail": {
+        "existing_A_F_files": 145,
+        "Ideal_files": 170,
+        "new_files_only_under_docs": true,
+        "git_history_reinspection": false
+      }
+    },
+    {
+      "name": "explicit_scope_guards_and_required_limitations",
+      "passed": true,
+      "detail": true
+    }
+  ],
+  "semantic_review": "Human-readable claim scope/counterexample review performed by the authoring assistant; not a theorem prover or external peer review.",
+  "historical_validation": "Stored successful A–F validation/reproducibility/regression logs, with matching artifact hashes; not rerun in this task.",
+  "document_sha256": {
+    "RSSI_A_F_SYNTHESIS.md": "4c402d123e3800bed74380db0d385417d26c1ebd0035dcc28e1dfd6a67ca9bf6",
+    "RSSI_EXPERIMENT_MAP.md": "8bd169d032c7c165759878e574baf25217b64f9ff05788856c3ad958a40dcb8e",
+    "RSSI_CLAIM_LEDGER.md": "6e1b67af83b7aaef5b0d8fb3ab35bd45350f376d263eb38675f4b35975fb0f6d",
+    "RSSI_LIMITATIONS.md": "3be04aa8ec8939e5ce4860d39701f8c981e48795aa136771f23006c526d3d377",
+    "RSSI_MATHEMATICAL_CORE.md": "4f1b95bc7c55fc59afb4f937c1a373030d526c79b58c2ec967db8f4c5a934f5f",
+    "RSSI_NEXT_STEP_DECISION.md": "7af8d63b1309d38a707030f16cbb4d2f02fa6c3ce213706584cb16651f09b08d"
+  }
+}

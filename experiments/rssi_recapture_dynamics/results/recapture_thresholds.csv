@@ -1,0 +1,29 @@
+family,axis,fixed,kind,lower,upper,from_distribution,to_distribution,status,lower_all_persistent
+abrupt_return,q_nominal,none,first_relapse,,,,,not_observed,
+alternating,q_nominal,none,first_relapse,,,,,not_observed,
+bridge_order,q_actual,fixed family or order comparison,availability,,,,,not_estimated_q_not_manipulated,
+descending_bridge,q_actual,fixed family or order comparison,availability,,,,,not_estimated_q_not_manipulated,
+endpoint_order,q_actual,fixed family or order comparison,availability,,,,,not_estimated_q_not_manipulated,
+gradual_drift,q_nominal,v=0.01,first_relapse,0.75,0.9,"{""A_genuine_revision_candidate"": 5}","{""E_relapse"": 5}",bracketed,True
+gradual_drift,q_nominal,v=0.01,adjacent_change,0.75,0.9,"{""A_genuine_revision_candidate"": 5}","{""E_relapse"": 5}",observed_distribution_change,True
+gradual_drift,q_nominal,v=0.025,first_relapse,0.9,1.0,"{""A_genuine_revision_candidate"": 5}","{""E_relapse"": 5}",bracketed,True
+gradual_drift,q_nominal,v=0.025,adjacent_change,0.9,1.0,"{""A_genuine_revision_candidate"": 5}","{""E_relapse"": 5}",observed_distribution_change,True
+gradual_drift,q_nominal,v=0.04,first_relapse,0.9,1.0,"{""A_genuine_revision_candidate"": 5}","{""E_relapse"": 5}",bracketed,True
+gradual_drift,q_nominal,v=0.04,adjacent_change,0.9,1.0,"{""A_genuine_revision_candidate"": 5}","{""E_relapse"": 5}",observed_distribution_change,True
+gradual_drift,q_nominal,v=0.049,first_relapse,0.9,1.0,"{""A_genuine_revision_candidate"": 5}","{""E_relapse"": 5}",bracketed,True
+gradual_drift,q_nominal,v=0.049,adjacent_change,0.9,1.0,"{""A_genuine_revision_candidate"": 5}","{""E_relapse"": 5}",observed_distribution_change,True
+gradual_drift,q_nominal,v=0.051,first_relapse,,,,,not_observed,
+gradual_drift,q_nominal,v=1.0,first_relapse,,,,,not_observed,
+gradual_drift,drift_v,q=0,first_relapse,,,,,not_observed,
+gradual_drift,drift_v,q=0.1,first_relapse,,,,,not_observed,
+gradual_drift,drift_v,q=0.25,first_relapse,,,,,not_observed,
+gradual_drift,drift_v,q=0.5,first_relapse,,,,,not_observed,
+gradual_drift,drift_v,q=0.75,first_relapse,,,,,not_observed,
+gradual_drift,drift_v,q=0.9,first_relapse,,0.01,,"{""E_relapse"": 5}",already_at_minimum,
+gradual_drift,drift_v,q=0.9,adjacent_change,0.01,0.025,"{""E_relapse"": 5}","{""A_genuine_revision_candidate"": 5}",observed_distribution_change,False
+gradual_drift,drift_v,q=1.0,first_relapse,,0.01,,"{""E_relapse"": 5}",already_at_minimum,
+gradual_drift,drift_v,q=1.0,adjacent_change,0.049,0.051,"{""E_relapse"": 5}","{""A_genuine_revision_candidate"": 5}",observed_distribution_change,False
+no_input,q_actual,fixed family or order comparison,availability,,,,,not_estimated_q_not_manipulated,
+noisy_corrective,q_actual,fixed family or order comparison,availability,,,,,not_estimated_q_not_manipulated,
+sparse_corrective,q_nominal,none,first_relapse,,,,,not_observed,
+stationary,q_actual,fixed family or order comparison,availability,,,,,not_estimated_q_not_manipulated,

@@ -1,0 +1,667 @@
+[
+  {
+    "name": "A sizes",
+    "artifact": "source_facts.json / original CSV row counts",
+    "selector": "trials, pressure_grid",
+    "observed": [
+      27104,
+      625
+    ],
+    "matched_frozen_value": [
+      27104,
+      625
+    ]
+  },
+  {
+    "name": "B sizes",
+    "artifact": "source_facts.json / original CSV row counts",
+    "selector": "trajectories, states, events, seed_sensitivity_runs",
+    "observed": [
+      120,
+      9600,
+      13440,
+      720
+    ],
+    "matched_frozen_value": [
+      120,
+      9600,
+      13440,
+      720
+    ]
+  },
+  {
+    "name": "C sizes",
+    "artifact": "source_facts.json / original CSV row counts",
+    "selector": "runs, states, events",
+    "observed": [
+      54,
+      10167,
+      20130
+    ],
+    "matched_frozen_value": [
+      54,
+      10167,
+      20130
+    ]
+  },
+  {
+    "name": "D sizes",
+    "artifact": "source_facts.json / original CSV row counts",
+    "selector": "runs, states, events",
+    "observed": [
+      920,
+      176710,
+      346450
+    ],
+    "matched_frozen_value": [
+      920,
+      176710,
+      346450
+    ]
+  },
+  {
+    "name": "E sizes",
+    "artifact": "source_facts.json / original CSV row counts",
+    "selector": "runs, states, events",
+    "observed": [
+      330,
+      44435,
+      48880
+    ],
+    "matched_frozen_value": [
+      330,
+      44435,
+      48880
+    ]
+  },
+  {
+    "name": "F sizes",
+    "artifact": "source_facts.json / original CSV row counts",
+    "selector": "runs, states, events",
+    "observed": [
+      170,
+      22610,
+      11940
+    ],
+    "matched_frozen_value": [
+      170,
+      22610,
+      11940
+    ]
+  },
+  {
+    "name": "A output/internal split",
+    "artifact": "results/a_summary.csv",
+    "selector": "external_only",
+    "observed": [
+      726,
+      726,
+      0
+    ],
+    "matched_frozen_value": [
+      726,
+      726,
+      0
+    ]
+  },
+  {
+    "name": "A evidence update",
+    "artifact": "results/a_summary.csv",
+    "selector": "evidence_revision",
+    "observed": 114,
+    "matched_frozen_value": 114
+  },
+  {
+    "name": "B C endpoints",
+    "artifact": "results/b_trajectories.csv",
+    "selector": "drift_away / gated / tol=.05 / step1,80",
+    "observed": [
+      0.9619349672143838,
+      0.9999858876349774
+    ],
+    "matched_frozen_value": [
+      0.9619349672143838,
+      0.9999858876349774
+    ]
+  },
+  {
+    "name": "B D endpoints",
+    "artifact": "results/b_trajectories.csv",
+    "selector": "same rows",
+    "observed": [
+      0.6380650327856161,
+      0.999865814948839
+    ],
+    "matched_frozen_value": [
+      0.6380650327856161,
+      0.999865814948839
+    ]
+  },
+  {
+    "name": "C maximal S rejected",
+    "artifact": "experiments/rssi_attractor_escape/results/event_log.csv",
+    "selector": "descending_bridge_7_T2_repeated_1.0, injection step10",
+    "observed": [
+      "0.69",
+      "0.775",
+      "0.775",
+      "evidence_threshold_rejection"
+    ],
+    "matched_frozen_value": [
+      "0.69",
+      "0.775",
+      "0.775",
+      "evidence_threshold_rejection"
+    ]
+  },
+  {
+    "name": "D regime-conditioned boundary",
+    "artifact": "experiments/rssi_attractor_escape_boundary/results/summary.csv",
+    "selector": "all primary, initial D=1",
+    "observed": 900,
+    "matched_frozen_value": 900
+  },
+  {
+    "name": "D delayed relapse",
+    "artifact": "experiments/rssi_attractor_escape_boundary/results/summary.csv",
+    "selector": "bridge / S=1 / F",
+    "observed": {
+      "1": [
+        39
+      ],
+      "2": [
+        79
+      ],
+      "3": [
+        79
+      ],
+      "4": [
+        79
+      ],
+      "8": [
+        79
+      ],
+      "16": [
+        79
+      ]
+    },
+    "matched_frozen_value": {
+      "1": [
+        39
+      ],
+      "2": [
+        79
+      ],
+      "3": [
+        79
+      ],
+      "4": [
+        79
+      ],
+      "8": [
+        79
+      ],
+      "16": [
+        79
+      ]
+    }
+  },
+  {
+    "name": "E fast/slow pairs",
+    "artifact": "experiments/rssi_recapture_dynamics/results/path_dependence.csv",
+    "selector": "same endpoint 0",
+    "observed": 5,
+    "matched_frozen_value": 5
+  },
+  {
+    "name": "E order effects including negative control",
+    "artifact": "experiments/rssi_recapture_dynamics/results/order_effects.csv",
+    "selector": "changed of 15 pairs per group",
+    "observed": {
+      "bridge_values": 10,
+      "endpoints": 0
+    },
+    "matched_frozen_value": {
+      "bridge_values": 10,
+      "endpoints": 0
+    }
+  },
+  {
+    "name": "E q brackets and absent relapse",
+    "artifact": "experiments/rssi_recapture_dynamics/results/recapture_thresholds.csv",
+    "selector": "gradual_drift / first_relapse / q_nominal",
+    "observed": {
+      "v=0.01": [
+        "0.75",
+        "0.9",
+        "bracketed"
+      ],
+      "v=0.025": [
+        "0.9",
+        "1.0",
+        "bracketed"
+      ],
+      "v=0.04": [
+        "0.9",
+        "1.0",
+        "bracketed"
+      ],
+      "v=0.049": [
+        "0.9",
+        "1.0",
+        "bracketed"
+      ],
+      "v=0.051": [
+        "",
+        "",
+        "not_observed"
+      ],
+      "v=1.0": [
+        "",
+        "",
+        "not_observed"
+      ]
+    },
+    "matched_frozen_value": {
+      "v=0.01": [
+        "0.75",
+        "0.9",
+        "bracketed"
+      ],
+      "v=0.025": [
+        "0.9",
+        "1.0",
+        "bracketed"
+      ],
+      "v=0.04": [
+        "0.9",
+        "1.0",
+        "bracketed"
+      ],
+      "v=0.049": [
+        "0.9",
+        "1.0",
+        "bracketed"
+      ],
+      "v=0.051": [
+        "",
+        "",
+        "not_observed"
+      ],
+      "v=1.0": [
+        "",
+        "",
+        "not_observed"
+      ]
+    }
+  },
+  {
+    "name": "F control_abrupt0",
+    "artifact": "experiments/rssi_admissible_bridge/results/bridge_summary.csv",
+    "selector": "all five seeds, [length,accepted,b_final,D_final]",
+    "observed": [
+      [
+        120,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        120,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        120,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        120,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        120,
+        0,
+        1.0,
+        0.0
+      ]
+    ],
+    "matched_frozen_value": [
+      [
+        120,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        120,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        120,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        120,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        120,
+        0,
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "name": "F minimum_float_frontier",
+    "artifact": "experiments/rssi_admissible_bridge/results/bridge_summary.csv",
+    "selector": "all five seeds, [length,accepted,b_final,D_final]",
+    "observed": [
+      [
+        21,
+        21,
+        0.0,
+        1.0
+      ],
+      [
+        21,
+        21,
+        0.0,
+        1.0
+      ],
+      [
+        21,
+        21,
+        0.0,
+        1.0
+      ],
+      [
+        21,
+        21,
+        0.0,
+        1.0
+      ],
+      [
+        21,
+        21,
+        0.0,
+        1.0
+      ]
+    ],
+    "matched_frozen_value": [
+      [
+        21,
+        21,
+        0.0,
+        1.0
+      ],
+      [
+        21,
+        21,
+        0.0,
+        1.0
+      ],
+      [
+        21,
+        21,
+        0.0,
+        1.0
+      ],
+      [
+        21,
+        21,
+        0.0,
+        1.0
+      ],
+      [
+        21,
+        21,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  {
+    "name": "F control_no_input",
+    "artifact": "experiments/rssi_admissible_bridge/results/bridge_summary.csv",
+    "selector": "all five seeds, [length,accepted,b_final,D_final]",
+    "observed": [
+      [
+        0,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        0,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        0,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        0,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        0,
+        0,
+        1.0,
+        0.0
+      ]
+    ],
+    "matched_frozen_value": [
+      [
+        0,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        0,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        0,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        0,
+        0,
+        1.0,
+        0.0
+      ],
+      [
+        0,
+        0,
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "name": "F noise targets",
+    "artifact": "experiments/rssi_admissible_bridge/results/bridge_summary.csv",
+    "selector": "fixed 25 input bridge, counts /5",
+    "observed": {
+      "0": 5,
+      "0.001": 5,
+      "0.004": 5,
+      "0.006": 2,
+      "0.012": 0
+    },
+    "matched_frozen_value": {
+      "0": 5,
+      "0.001": 5,
+      "0.004": 5,
+      "0.006": 2,
+      "0.012": 0
+    }
+  },
+  {
+    "name": "F late gap label",
+    "artifact": "experiments/rssi_admissible_bridge/results/bridge_summary.csv",
+    "selector": "broken_late seed7",
+    "observed": "mixed_or_partial_escape",
+    "matched_frozen_value": "mixed_or_partial_escape"
+  },
+  {
+    "name": "F static path insufficient for arbitrary order",
+    "artifact": "experiments/rssi_admissible_bridge/results/bridge_summary.csv",
+    "selector": "seed7 descending/ascending",
+    "observed": [
+      [
+        "True",
+        "True"
+      ],
+      [
+        "True",
+        "False"
+      ]
+    ],
+    "matched_frozen_value": [
+      [
+        "True",
+        "True"
+      ],
+      [
+        "True",
+        "False"
+      ]
+    ]
+  },
+  {
+    "name": "F same-token witness count",
+    "artifact": "experiments/rssi_admissible_bridge/results/order_acceptability.csv",
+    "selector": "raw rows",
+    "observed": 2189,
+    "matched_frozen_value": 2189
+  },
+  {
+    "name": "F first divergence",
+    "artifact": "experiments/rssi_admissible_bridge/results/order_divergence.csv",
+    "selector": "seed7 descending/ascending",
+    "observed": [
+      "1",
+      "0.95",
+      "2",
+      "119"
+    ],
+    "matched_frozen_value": [
+      "1",
+      "0.95",
+      "2",
+      "119"
+    ]
+  },
+  {
+    "name": "F graph table",
+    "artifact": "experiments/rssi_admissible_bridge/results/reachability_graph.csv",
+    "selector": "tol=.05",
+    "observed": [
+      [
+        21,
+        9,
+        "",
+        0
+      ],
+      [
+        41,
+        1,
+        "28",
+        576
+      ],
+      [
+        61,
+        1,
+        "21",
+        14
+      ],
+      [
+        81,
+        1,
+        "23",
+        128
+      ]
+    ],
+    "matched_frozen_value": [
+      [
+        21,
+        9,
+        "",
+        0
+      ],
+      [
+        41,
+        1,
+        "28",
+        576
+      ],
+      [
+        61,
+        1,
+        "21",
+        14
+      ],
+      [
+        81,
+        1,
+        "23",
+        128
+      ]
+    ]
+  },
+  {
+    "name": "real vs binary64 minimum",
+    "artifact": "experiments/rssi_admissible_bridge/results/analysis.json",
+    "selector": "real_lower_bound,float_L_min,frontier_step20",
+    "observed": [
+      20,
+      21,
+      7.320533068622126e-16
+    ],
+    "matched_frozen_value": [
+      20,
+      21,
+      7.320533068622126e-16
+    ]
+  },
+  {
+    "name": "F classifications",
+    "artifact": "experiments/rssi_admissible_bridge/results/bridge_summary.csv",
+    "selector": "saved labels",
+    "observed": {
+      "A_genuine_revision_candidate": 83,
+      "E_relapse": 82,
+      "mixed_or_partial_escape": 5
+    },
+    "matched_frozen_value": {
+      "A_genuine_revision_candidate": 83,
+      "E_relapse": 82,
+      "mixed_or_partial_escape": 5
+    }
+  }
+]

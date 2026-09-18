@@ -1,0 +1,351 @@
+{
+  "execution": "Python source replay / declared minimal model",
+  "native_julia_executed": false,
+  "python": "3.12.14",
+  "source_commit": "a51c99e26c3534b68bffbc9c81697886f6097feb",
+  "sources": [
+    {
+      "path": "sources/hoho/src/HohoConsciousness.jl",
+      "git_blob": "e46453372f86680447851a0f7f973bc4a095eda3",
+      "sha256": "aadf0ed3cdd4629da11bf0249d1bf561f4c16ad1cfa5400f4de0ff18dc7c1392",
+      "bytes": 690,
+      "url": "https://github.com/0syamuixinyamu1/hoho-consciousness-engine/blob/a51c99e26c3534b68bffbc9c81697886f6097feb/src/HohoConsciousness.jl"
+    },
+    {
+      "path": "sources/hoho/src/HohoConsciousnessCore.jl",
+      "git_blob": "e85918cd3329baf741a5a24718b9fd12f6664c3f",
+      "sha256": "5b20097371d9ec3b3c75a01c5e07660caddfd35824e8c731af16d501d9652291",
+      "bytes": 63613,
+      "url": "https://github.com/0syamuixinyamu1/hoho-consciousness-engine/blob/a51c99e26c3534b68bffbc9c81697886f6097feb/src/HohoConsciousnessCore.jl"
+    },
+    {
+      "path": "sources/hoho/src/ImaginaryMode.jl",
+      "git_blob": "23144925440e28f0c2e2e690a374a4dbb79aa43d",
+      "sha256": "d79b487ccd643c67aab6c6e29ae6bff0bafbbf7c2bb9c39a419c806360975795",
+      "bytes": 7766,
+      "url": "https://github.com/0syamuixinyamu1/hoho-consciousness-engine/blob/a51c99e26c3534b68bffbc9c81697886f6097feb/src/ImaginaryMode.jl"
+    }
+  ],
+  "source_integrity_verified": true,
+  "protocol_sha256": "1d3535f3ec88281cbdcffda573186a064977092bafce0b7cd4de81ce4b6c7451",
+  "runner_sha256": "f160de63ea03cc22979cafa3073ccfa97a61c4bb92692855b69855907973aa1e",
+  "a_trials": 27104,
+  "a_pressure_grid": 625,
+  "b_trajectory_rows": 9600,
+  "b_input_events": 13440,
+  "b_seed_sensitivity_runs": 720,
+  "a_summary": [
+    {
+      "policy": "unchanged",
+      "initially_wrong_correct_hypothesis_cases": 1694,
+      "high_pressure_cases": 726,
+      "high_pressure_output_correct": 0,
+      "high_pressure_internal_correct": 0,
+      "high_pressure_apparent_only": 0
+    },
+    {
+      "policy": "external_only",
+      "initially_wrong_correct_hypothesis_cases": 1694,
+      "high_pressure_cases": 726,
+      "high_pressure_output_correct": 726,
+      "high_pressure_internal_correct": 0,
+      "high_pressure_apparent_only": 726
+    },
+    {
+      "policy": "imaginary_only",
+      "initially_wrong_correct_hypothesis_cases": 1694,
+      "high_pressure_cases": 726,
+      "high_pressure_output_correct": 726,
+      "high_pressure_internal_correct": 0,
+      "high_pressure_apparent_only": 726
+    },
+    {
+      "policy": "evidence_revision",
+      "initially_wrong_correct_hypothesis_cases": 1694,
+      "high_pressure_cases": 726,
+      "high_pressure_output_correct": 114,
+      "high_pressure_internal_correct": 114,
+      "high_pressure_apparent_only": 0
+    }
+  ],
+  "checks_passed": 12,
+  "checks_total": 12,
+  "checks": [
+    {
+      "name": "same_correct_output_different_internal_state",
+      "passed": true,
+      "details": {
+        "unchanged": {
+          "policy": "unchanged",
+          "pressure_input": 1.0,
+          "evidence": 1.0,
+          "contradiction": 1.0,
+          "reference": 1,
+          "initial_belief": 0,
+          "hypothesis": 1,
+          "pressure_score": 1.0,
+          "support": 1.0,
+          "final_belief": 0,
+          "response": "value=0",
+          "apparent_correction": false,
+          "compliance_internal_revision": null,
+          "imaginary_active": false,
+          "collapse_returned": false,
+          "actual_state_change": false,
+          "output_score": 0,
+          "internal_score": 0,
+          "pressure_free_probe_score": 0
+        },
+        "external_only": {
+          "policy": "external_only",
+          "pressure_input": 1.0,
+          "evidence": 1.0,
+          "contradiction": 1.0,
+          "reference": 1,
+          "initial_belief": 0,
+          "hypothesis": 1,
+          "pressure_score": 1.0,
+          "support": 1.0,
+          "final_belief": 0,
+          "response": "value=1",
+          "apparent_correction": true,
+          "compliance_internal_revision": false,
+          "imaginary_active": false,
+          "collapse_returned": false,
+          "actual_state_change": false,
+          "output_score": 1,
+          "internal_score": 0,
+          "pressure_free_probe_score": 0
+        },
+        "imaginary_only": {
+          "policy": "imaginary_only",
+          "pressure_input": 1.0,
+          "evidence": 1.0,
+          "contradiction": 1.0,
+          "reference": 1,
+          "initial_belief": 0,
+          "hypothesis": 1,
+          "pressure_score": 1.0,
+          "support": 1.0,
+          "final_belief": 0,
+          "response": "value=1",
+          "apparent_correction": true,
+          "compliance_internal_revision": false,
+          "imaginary_active": true,
+          "collapse_returned": false,
+          "actual_state_change": false,
+          "output_score": 1,
+          "internal_score": 0,
+          "pressure_free_probe_score": 0
+        },
+        "evidence_revision": {
+          "policy": "evidence_revision",
+          "pressure_input": 1.0,
+          "evidence": 1.0,
+          "contradiction": 1.0,
+          "reference": 1,
+          "initial_belief": 0,
+          "hypothesis": 1,
+          "pressure_score": 1.0,
+          "support": 1.0,
+          "final_belief": 1,
+          "response": "value=1",
+          "apparent_correction": false,
+          "compliance_internal_revision": null,
+          "imaginary_active": false,
+          "collapse_returned": true,
+          "actual_state_change": true,
+          "output_score": 1,
+          "internal_score": 1,
+          "pressure_free_probe_score": 1
+        }
+      }
+    },
+    {
+      "name": "pressure_routes_preserve_real_belief_in_grid",
+      "passed": true,
+      "details": {
+        "cases": 13552
+      }
+    },
+    {
+      "name": "weak_evidence_does_not_revise_in_grid",
+      "passed": true,
+      "details": {
+        "cases": 5712
+      }
+    },
+    {
+      "name": "strong_wrong_hypothesis_can_worsen_belief",
+      "passed": true,
+      "details": {
+        "cases": 266,
+        "interpretation": "Supplied strength is not independently verified truth."
+      }
+    },
+    {
+      "name": "collapse_flag_is_not_state_delta",
+      "passed": true,
+      "details": {
+        "cases": 532
+      }
+    },
+    {
+      "name": "fixed_belief_fixed_reference_error_is_constant",
+      "passed": true,
+      "details": {
+        "fixture": "frozen",
+        "seed": -1,
+        "policy": "gated",
+        "tol": 0.05,
+        "step": 80,
+        "initial_belief": 0.0,
+        "reference": 1.0,
+        "belief": 0.0,
+        "state_delta": 0.0,
+        "accepted_agreement": 1.0,
+        "all_input_agreement": 0.5,
+        "coverage": 0.5,
+        "reference_error": 1.0,
+        "reference_acceptance": 0.0,
+        "rejected_total": 80,
+        "reference_rejected_total": 80
+      }
+    },
+    {
+      "name": "small_steps_escape_initial_belief_without_override",
+      "passed": true,
+      "details": {
+        "fixture": "bridge",
+        "seed": -1,
+        "policy": "gated",
+        "tol": 0.05,
+        "step": 40,
+        "initial_belief": 0.0,
+        "reference": 1.0,
+        "belief": 1.0,
+        "state_delta": 0.025000000000000022,
+        "accepted_agreement": 0.975,
+        "all_input_agreement": 0.975,
+        "coverage": 1.0,
+        "reference_error": 0.0,
+        "reference_acceptance": 1.0,
+        "rejected_total": 0,
+        "reference_rejected_total": 0
+      }
+    },
+    {
+      "name": "conditional_agreement_and_reference_error_can_both_increase",
+      "passed": true,
+      "details": {
+        "first": {
+          "fixture": "drift_away",
+          "seed": -1,
+          "policy": "gated",
+          "tol": 0.05,
+          "step": 1,
+          "initial_belief": 0.4,
+          "reference": 1.0,
+          "belief": 0.36193496721438384,
+          "state_delta": 0.03806503278561618,
+          "accepted_agreement": 0.9619349672143838,
+          "all_input_agreement": 0.6619349672143838,
+          "coverage": 0.5,
+          "reference_error": 0.6380650327856161,
+          "reference_acceptance": 0.0,
+          "rejected_total": 1,
+          "reference_rejected_total": 1
+        },
+        "last": {
+          "fixture": "drift_away",
+          "seed": -1,
+          "policy": "gated",
+          "tol": 0.05,
+          "step": 80,
+          "initial_belief": 0.4,
+          "reference": 1.0,
+          "belief": 0.00013418505116100476,
+          "state_delta": 1.4112365022630547e-05,
+          "accepted_agreement": 0.9999858876349774,
+          "all_input_agreement": 0.5000600363430692,
+          "coverage": 0.5,
+          "reference_error": 0.999865814948839,
+          "reference_acceptance": 0.0,
+          "rejected_total": 80,
+          "reference_rejected_total": 80
+        }
+      }
+    },
+    {
+      "name": "bounded_step_gate_does_not_imply_convergence",
+      "passed": true,
+      "details": {
+        "tail_beliefs": [
+          0.45,
+          0.55
+        ],
+        "scope": "Constructed periodic input; finite run plus explicit period-two transition."
+      }
+    },
+    {
+      "name": "empty_observation_is_na_not_perfect_score",
+      "passed": true,
+      "details": {
+        "fixture": "all_rejected",
+        "seed": -1,
+        "policy": "gated",
+        "tol": 0.05,
+        "step": 80,
+        "initial_belief": 0.0,
+        "reference": 1.0,
+        "belief": 0.0,
+        "state_delta": 0.0,
+        "accepted_agreement": null,
+        "all_input_agreement": 0.0,
+        "coverage": 0.0,
+        "reference_error": 1.0,
+        "reference_acceptance": 0.0,
+        "rejected_total": 80,
+        "reference_rejected_total": 80
+      }
+    },
+    {
+      "name": "unknown_topic_is_admitted_and_initial_order_matters",
+      "passed": true,
+      "details": [
+        {
+          "first_value": 0.0,
+          "first_accepted": true,
+          "first_agreement": null,
+          "final_belief": 0.0,
+          "reference": 1.0,
+          "error": 1.0
+        },
+        {
+          "first_value": 1.0,
+          "first_accepted": true,
+          "first_agreement": null,
+          "final_belief": 1.0,
+          "reference": 1.0,
+          "error": 0.0
+        }
+      ]
+    },
+    {
+      "name": "frozen_result_survives_30_input_orders_and_initializations",
+      "passed": true,
+      "details": {
+        "seeds": 30
+      }
+    }
+  ],
+  "data_sha256": {
+    "a_pressure_grid.csv": "e779226e81bcf9005efc9753674a4c60f178d380cd725e862364a82099b1cae7",
+    "a_summary.csv": "f4b91926f9deb7cb8f09b417fd3e870a7dbe0584a148f037918aecb289ff7e9f",
+    "a_trials.csv": "ad57e4874f95760585bbd22ea2dc3f75289727277ff75dff4b85e0290f21bded",
+    "b_endpoints.csv": "9ac999d8948367fc64b69c36c21331175bfb6f44b5df69b8c7cf1c34e30b4040",
+    "b_input_events.csv": "7c32671e1b5aa64dee5284fd0de78f9c673efe2419c8dec7d2e2f31f94c2b435",
+    "b_seed_sensitivity.csv": "0160eb9639ba309e9d1c10c21521eb06d6ee04cd1e79227a0edb5504552f6347",
+    "b_trajectories.csv": "ec71e9aa5ac3b261ef1ff92f4567bc10150955bf57e9dc4eb4cf0168b58064ed"
+  }
+}

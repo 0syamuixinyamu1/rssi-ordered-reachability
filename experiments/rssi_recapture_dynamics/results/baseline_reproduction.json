@@ -1,0 +1,141 @@
+{
+  "checks": [
+    {
+      "seed": 7,
+      "regime": "stationary",
+      "strength": 1.0,
+      "frequency": 1,
+      "classification": "A_genuine_revision_candidate",
+      "time_to_relapse": null,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 7,
+      "regime": "descending_bridge",
+      "strength": 1.0,
+      "frequency": 1,
+      "classification": "E_relapse",
+      "time_to_relapse": 39,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 7,
+      "regime": "stationary",
+      "strength": 0.58,
+      "frequency": 1,
+      "classification": "C_rejection",
+      "time_to_relapse": null,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 7,
+      "regime": "stationary",
+      "strength": 1.0,
+      "frequency": 3,
+      "classification": "A_genuine_revision_candidate",
+      "time_to_relapse": null,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 7,
+      "regime": "descending_bridge",
+      "strength": 1.0,
+      "frequency": 3,
+      "classification": "E_relapse",
+      "time_to_relapse": 79,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 17,
+      "regime": "stationary",
+      "strength": 1.0,
+      "frequency": 1,
+      "classification": "A_genuine_revision_candidate",
+      "time_to_relapse": null,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 17,
+      "regime": "descending_bridge",
+      "strength": 1.0,
+      "frequency": 1,
+      "classification": "E_relapse",
+      "time_to_relapse": 39,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 17,
+      "regime": "stationary",
+      "strength": 0.58,
+      "frequency": 1,
+      "classification": "C_rejection",
+      "time_to_relapse": null,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 17,
+      "regime": "stationary",
+      "strength": 1.0,
+      "frequency": 3,
+      "classification": "A_genuine_revision_candidate",
+      "time_to_relapse": null,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 17,
+      "regime": "descending_bridge",
+      "strength": 1.0,
+      "frequency": 3,
+      "classification": "E_relapse",
+      "time_to_relapse": 79,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 29,
+      "regime": "stationary",
+      "strength": 1.0,
+      "frequency": 1,
+      "classification": "A_genuine_revision_candidate",
+      "time_to_relapse": null,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 29,
+      "regime": "descending_bridge",
+      "strength": 1.0,
+      "frequency": 1,
+      "classification": "E_relapse",
+      "time_to_relapse": 39,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 29,
+      "regime": "stationary",
+      "strength": 0.58,
+      "frequency": 1,
+      "classification": "C_rejection",
+      "time_to_relapse": null,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 29,
+      "regime": "stationary",
+      "strength": 1.0,
+      "frequency": 3,
+      "classification": "A_genuine_revision_candidate",
+      "time_to_relapse": null,
+      "all_common_summary_fields_match": true
+    },
+    {
+      "seed": 29,
+      "regime": "descending_bridge",
+      "strength": 1.0,
+      "frequency": 3,
+      "classification": "E_relapse",
+      "time_to_relapse": 79,
+      "all_common_summary_fields_match": true
+    }
+  ],
+  "passed": 15,
+  "source": "C runner imported through D; saved D summary comparison"
+}

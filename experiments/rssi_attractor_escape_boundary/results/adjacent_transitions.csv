@@ -1,0 +1,13 @@
+regime,axis,fixed_variable,fixed_value,lower,upper,from_distribution,to_distribution
+stationary,strength,frequency,1,0.58,0.59,"{""C_rejection"": 5}","{""A_genuine_revision_candidate"": 5}"
+stationary,strength,frequency,2,0.58,0.59,"{""C_rejection"": 5}","{""A_genuine_revision_candidate"": 5}"
+stationary,strength,frequency,3,0.58,0.59,"{""C_rejection"": 5}","{""A_genuine_revision_candidate"": 5}"
+stationary,strength,frequency,4,0.58,0.59,"{""C_rejection"": 5}","{""A_genuine_revision_candidate"": 5}"
+stationary,strength,frequency,8,0.58,0.59,"{""C_rejection"": 5}","{""A_genuine_revision_candidate"": 5}"
+stationary,strength,frequency,16,0.58,0.59,"{""C_rejection"": 5}","{""A_genuine_revision_candidate"": 5}"
+descending_bridge,strength,frequency,1,0.58,0.59,"{""C_rejection"": 5}","{""E_relapse"": 5}"
+descending_bridge,strength,frequency,2,0.58,0.59,"{""C_rejection"": 5}","{""E_relapse"": 5}"
+descending_bridge,strength,frequency,3,0.58,0.59,"{""C_rejection"": 5}","{""E_relapse"": 5}"
+descending_bridge,strength,frequency,4,0.58,0.59,"{""C_rejection"": 5}","{""E_relapse"": 5}"
+descending_bridge,strength,frequency,8,0.58,0.59,"{""C_rejection"": 5}","{""E_relapse"": 5}"
+descending_bridge,strength,frequency,16,0.58,0.59,"{""C_rejection"": 5}","{""E_relapse"": 5}"

@@ -1,0 +1,57 @@
+{
+  "status": "historical_completed_validation",
+  "scope": "Stored A-F validation logs from the completed experimental series; sanitized summary for public release",
+  "not_a_current_rerun": true,
+  "series": {
+    "A_B": {
+      "checks_passed": 12,
+      "source_integrity_verified": true,
+      "csv_hashes_recorded": 7
+    },
+    "C": {
+      "audit_groups_passed": 12,
+      "fixed_seed_csv_byte_matches": 5,
+      "events_independently_replayed": 20130,
+      "states_independently_checked": 10167,
+      "A_B_regression_checks": 12,
+      "native_julia_executed": false
+    },
+    "D": {
+      "audit_groups_passed": 10,
+      "fixed_seed_csv_byte_matches": 10,
+      "events_independently_replayed": 346450,
+      "states_independently_checked": 176710,
+      "C_summary_rows_regressed": 48,
+      "C_regression_groups": 12,
+      "A_B_regression_checks": 12,
+      "native_julia_executed": false
+    },
+    "E": {
+      "audit_groups_passed": 11,
+      "fixed_seed_csv_byte_matches": 10,
+      "events_independently_replayed": 48880,
+      "states_independently_checked": 44435,
+      "D_regression_groups": 10,
+      "C_regression_groups": 12,
+      "A_B_regression_checks": 12,
+      "native_julia_executed": false
+    },
+    "F": {
+      "audit_groups_passed": 11,
+      "fixed_seed_csv_byte_matches": 11,
+      "path_manifest_match": true,
+      "events_independently_replayed": 11940,
+      "states_independently_checked": 22610,
+      "order_pairs_checked": 30,
+      "same_token_witnesses_checked": 2189,
+      "graph_cases_checked": 10,
+      "E_regression_groups": 11,
+      "D_regression_groups": 10,
+      "C_regression_groups": 12,
+      "A_B_regression_checks": 12,
+      "native_julia_executed": false
+    }
+  },
+  "publication_note": "Original machine-specific validation JSON files are not included. The public reproducer reruns the unchanged generators and compares frozen CSV bytes without a private Ideal checkout."
+}
+

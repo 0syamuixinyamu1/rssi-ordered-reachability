@@ -1,0 +1,25 @@
+scope,regime,feature,runs,observed_accuracy,majority_baseline_accuracy,distinct_feature_values,feature_values_with_multiple_outcomes,interpretation
+all_cells,stationary,C_baseline_last20,450,0.5333333333333333,0.5333333333333333,5,5,descriptive same-grid seed holdout; not independent generalization
+all_cells,stationary,C_early20,450,0.5333333333333333,0.5333333333333333,1,1,descriptive same-grid seed holdout; not independent generalization
+all_cells,stationary,C_final20,450,0.5333333333333333,0.5333333333333333,1,1,descriptive same-grid seed holdout; not independent generalization
+all_cells,stationary,C_early20_vector,450,0.5333333333333333,0.5333333333333333,1,1,descriptive same-grid seed holdout; not independent generalization
+all_cells,descending_bridge,C_baseline_last20,450,0.5333333333333333,0.5333333333333333,1,1,descriptive same-grid seed holdout; not independent generalization
+all_cells,descending_bridge,C_early20,450,1.0,0.5333333333333333,4,0,descriptive same-grid seed holdout; not independent generalization
+all_cells,descending_bridge,C_final20,450,0.5333333333333333,0.5333333333333333,1,1,descriptive same-grid seed holdout; not independent generalization
+all_cells,descending_bridge,C_early20_vector,450,1.0,0.5333333333333333,4,0,descriptive same-grid seed holdout; not independent generalization
+all_cells,pooled,C_baseline_last20,900,0.5333333333333333,0.5333333333333333,6,6,descriptive same-grid seed holdout; not independent generalization
+all_cells,pooled,C_early20,900,0.7666666666666667,0.5333333333333333,4,1,descriptive same-grid seed holdout; not independent generalization
+all_cells,pooled,C_final20,900,0.5333333333333333,0.5333333333333333,2,2,descriptive same-grid seed holdout; not independent generalization
+all_cells,pooled,C_early20_vector,900,0.7666666666666667,0.5333333333333333,4,1,descriptive same-grid seed holdout; not independent generalization
+boundary_0.58_0.59,stationary,C_baseline_last20,60,0.5,0.5,5,5,descriptive same-grid seed holdout; not independent generalization
+boundary_0.58_0.59,stationary,C_early20,60,0.5,0.5,1,1,descriptive same-grid seed holdout; not independent generalization
+boundary_0.58_0.59,stationary,C_final20,60,0.5,0.5,1,1,descriptive same-grid seed holdout; not independent generalization
+boundary_0.58_0.59,stationary,C_early20_vector,60,0.5,0.5,1,1,descriptive same-grid seed holdout; not independent generalization
+boundary_0.58_0.59,descending_bridge,C_baseline_last20,60,0.5,0.5,1,1,descriptive same-grid seed holdout; not independent generalization
+boundary_0.58_0.59,descending_bridge,C_early20,60,1.0,0.5,2,0,descriptive same-grid seed holdout; not independent generalization
+boundary_0.58_0.59,descending_bridge,C_final20,60,0.5,0.5,1,1,descriptive same-grid seed holdout; not independent generalization
+boundary_0.58_0.59,descending_bridge,C_early20_vector,60,1.0,0.5,2,0,descriptive same-grid seed holdout; not independent generalization
+boundary_0.58_0.59,pooled,C_baseline_last20,120,0.5,0.5,6,6,descriptive same-grid seed holdout; not independent generalization
+boundary_0.58_0.59,pooled,C_early20,120,0.75,0.5,2,1,descriptive same-grid seed holdout; not independent generalization
+boundary_0.58_0.59,pooled,C_final20,120,0.5,0.5,2,2,descriptive same-grid seed holdout; not independent generalization
+boundary_0.58_0.59,pooled,C_early20_vector,120,0.75,0.5,2,1,descriptive same-grid seed holdout; not independent generalization

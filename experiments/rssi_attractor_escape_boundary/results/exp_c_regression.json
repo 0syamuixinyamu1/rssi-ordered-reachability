@@ -1,0 +1,371 @@
+{
+  "command": [
+    "python",
+    "/tmp/exp-d-c-regression-c1nwuneh/hoho-evaluation-experiments/experiments/rssi_attractor_escape/validate_results.py"
+  ],
+  "returncode": 0,
+  "stdout": "{\n  \"checks_passed\": 12,\n  \"existing_RSSI_checks\": 12,\n  \"runs\": 54,\n  \"trajectory_rows\": 10167,\n  \"events\": 20130,\n  \"probes\": 3321\n}\n",
+  "stderr": "",
+  "validation": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/tmp/exp-d-c-regression-c1nwuneh/hoho-evaluation-experiments/experiments/rssi_attractor_escape/validate_results.py"
+    ],
+    "checks_passed": 12,
+    "checks": [
+      {
+        "name": "original_Exp_C_outputs_and_protocol_unchanged",
+        "passed": true,
+        "details": {
+          "aggregate_summary.csv": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+          "attractor_checks.csv": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+          "event_log.csv": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+          "summary.csv": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+          "trajectories.csv": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82"
+        }
+      },
+      {
+        "name": "Hoho_Ideal_original_files_unchanged",
+        "passed": true,
+        "details": 170
+      },
+      {
+        "name": "Exp_A_B_sources_fixtures_results_unchanged",
+        "passed": true,
+        "details": 20
+      },
+      {
+        "name": "independent_scalar_event_replay",
+        "passed": true,
+        "details": 20130
+      },
+      {
+        "name": "independent_C_D_and_counts",
+        "passed": true,
+        "details": 10167
+      },
+      {
+        "name": "baseline_stability_and_paired_normal_inputs",
+        "passed": true,
+        "details": 54
+      },
+      {
+        "name": "independent_classification_and_metrics",
+        "passed": true,
+        "details": 54
+      },
+      {
+        "name": "post_injection_withdrawal_at_least_100_steps",
+        "passed": true,
+        "details": 54
+      },
+      {
+        "name": "independent_all_phase_local_perturbation_returns",
+        "passed": true,
+        "details": 3321
+      },
+      {
+        "name": "negative_checks_oscillation_reference_domain_and_mutation",
+        "passed": true,
+        "details": 5
+      },
+      {
+        "name": "existing_RSSI_Exp_A_B_checks_on_preserved_results",
+        "passed": true,
+        "details": 12
+      },
+      {
+        "name": "same_seeds_full_CSV_bitwise_reproducibility",
+        "passed": true,
+        "details": 5
+      }
+    ],
+    "existing_rssi_checks": [
+      {
+        "name": "same_correct_output_different_internal_state",
+        "passed": true,
+        "details": {
+          "unchanged": {
+            "policy": "unchanged",
+            "pressure_input": 1.0,
+            "evidence": 1.0,
+            "contradiction": 1.0,
+            "reference": 1.0,
+            "initial_belief": 0.0,
+            "hypothesis": 1.0,
+            "pressure_score": 1.0,
+            "support": 1.0,
+            "final_belief": 0.0,
+            "response": "value=0",
+            "apparent_correction": false,
+            "compliance_internal_revision": null,
+            "imaginary_active": false,
+            "collapse_returned": false,
+            "actual_state_change": false,
+            "output_score": 0.0,
+            "internal_score": 0.0,
+            "pressure_free_probe_score": 0.0
+          },
+          "external_only": {
+            "policy": "external_only",
+            "pressure_input": 1.0,
+            "evidence": 1.0,
+            "contradiction": 1.0,
+            "reference": 1.0,
+            "initial_belief": 0.0,
+            "hypothesis": 1.0,
+            "pressure_score": 1.0,
+            "support": 1.0,
+            "final_belief": 0.0,
+            "response": "value=1",
+            "apparent_correction": true,
+            "compliance_internal_revision": false,
+            "imaginary_active": false,
+            "collapse_returned": false,
+            "actual_state_change": false,
+            "output_score": 1.0,
+            "internal_score": 0.0,
+            "pressure_free_probe_score": 0.0
+          },
+          "imaginary_only": {
+            "policy": "imaginary_only",
+            "pressure_input": 1.0,
+            "evidence": 1.0,
+            "contradiction": 1.0,
+            "reference": 1.0,
+            "initial_belief": 0.0,
+            "hypothesis": 1.0,
+            "pressure_score": 1.0,
+            "support": 1.0,
+            "final_belief": 0.0,
+            "response": "value=1",
+            "apparent_correction": true,
+            "compliance_internal_revision": false,
+            "imaginary_active": true,
+            "collapse_returned": false,
+            "actual_state_change": false,
+            "output_score": 1.0,
+            "internal_score": 0.0,
+            "pressure_free_probe_score": 0.0
+          },
+          "evidence_revision": {
+            "policy": "evidence_revision",
+            "pressure_input": 1.0,
+            "evidence": 1.0,
+            "contradiction": 1.0,
+            "reference": 1.0,
+            "initial_belief": 0.0,
+            "hypothesis": 1.0,
+            "pressure_score": 1.0,
+            "support": 1.0,
+            "final_belief": 1.0,
+            "response": "value=1",
+            "apparent_correction": false,
+            "compliance_internal_revision": null,
+            "imaginary_active": false,
+            "collapse_returned": true,
+            "actual_state_change": true,
+            "output_score": 1.0,
+            "internal_score": 1.0,
+            "pressure_free_probe_score": 1.0
+          }
+        }
+      },
+      {
+        "name": "pressure_routes_preserve_real_belief_in_grid",
+        "passed": true,
+        "details": {
+          "cases": 13552
+        }
+      },
+      {
+        "name": "weak_evidence_does_not_revise_in_grid",
+        "passed": true,
+        "details": {
+          "cases": 5712
+        }
+      },
+      {
+        "name": "strong_wrong_hypothesis_can_worsen_belief",
+        "passed": true,
+        "details": {
+          "cases": 266,
+          "interpretation": "Supplied strength is not independently verified truth."
+        }
+      },
+      {
+        "name": "collapse_flag_is_not_state_delta",
+        "passed": true,
+        "details": {
+          "cases": 532
+        }
+      },
+      {
+        "name": "fixed_belief_fixed_reference_error_is_constant",
+        "passed": true,
+        "details": {
+          "fixture": "frozen",
+          "seed": -1.0,
+          "policy": "gated",
+          "tol": 0.05,
+          "step": 80.0,
+          "initial_belief": 0.0,
+          "reference": 1.0,
+          "belief": 0.0,
+          "state_delta": 0.0,
+          "accepted_agreement": 1.0,
+          "all_input_agreement": 0.5,
+          "coverage": 0.5,
+          "reference_error": 1.0,
+          "reference_acceptance": 0.0,
+          "rejected_total": 80.0,
+          "reference_rejected_total": 80.0
+        }
+      },
+      {
+        "name": "small_steps_escape_initial_belief_without_override",
+        "passed": true,
+        "details": {
+          "fixture": "bridge",
+          "seed": -1.0,
+          "policy": "gated",
+          "tol": 0.05,
+          "step": 40.0,
+          "initial_belief": 0.0,
+          "reference": 1.0,
+          "belief": 1.0,
+          "state_delta": 0.025000000000000022,
+          "accepted_agreement": 0.975,
+          "all_input_agreement": 0.975,
+          "coverage": 1.0,
+          "reference_error": 0.0,
+          "reference_acceptance": 1.0,
+          "rejected_total": 0.0,
+          "reference_rejected_total": 0.0
+        }
+      },
+      {
+        "name": "conditional_agreement_and_reference_error_can_both_increase",
+        "passed": true,
+        "details": {
+          "first": {
+            "fixture": "drift_away",
+            "seed": -1.0,
+            "policy": "gated",
+            "tol": 0.05,
+            "step": 1.0,
+            "initial_belief": 0.4,
+            "reference": 1.0,
+            "belief": 0.36193496721438384,
+            "state_delta": 0.03806503278561618,
+            "accepted_agreement": 0.9619349672143838,
+            "all_input_agreement": 0.6619349672143838,
+            "coverage": 0.5,
+            "reference_error": 0.6380650327856161,
+            "reference_acceptance": 0.0,
+            "rejected_total": 1.0,
+            "reference_rejected_total": 1.0
+          },
+          "last": {
+            "fixture": "drift_away",
+            "seed": -1.0,
+            "policy": "gated",
+            "tol": 0.05,
+            "step": 80.0,
+            "initial_belief": 0.4,
+            "reference": 1.0,
+            "belief": 0.00013418505116100476,
+            "state_delta": 1.4112365022630547e-05,
+            "accepted_agreement": 0.9999858876349774,
+            "all_input_agreement": 0.5000600363430692,
+            "coverage": 0.5,
+            "reference_error": 0.999865814948839,
+            "reference_acceptance": 0.0,
+            "rejected_total": 80.0,
+            "reference_rejected_total": 80.0
+          }
+        }
+      },
+      {
+        "name": "bounded_step_gate_does_not_imply_convergence",
+        "passed": true,
+        "details": {
+          "tail_beliefs": [
+            0.45,
+            0.55
+          ],
+          "scope": "Constructed periodic input; finite run plus explicit period-two transition."
+        }
+      },
+      {
+        "name": "empty_observation_is_na_not_perfect_score",
+        "passed": true,
+        "details": {
+          "fixture": "all_rejected",
+          "seed": -1.0,
+          "policy": "gated",
+          "tol": 0.05,
+          "step": 80.0,
+          "initial_belief": 0.0,
+          "reference": 1.0,
+          "belief": 0.0,
+          "state_delta": 0.0,
+          "accepted_agreement": null,
+          "all_input_agreement": 0.0,
+          "coverage": 0.0,
+          "reference_error": 1.0,
+          "reference_acceptance": 0.0,
+          "rejected_total": 80.0,
+          "reference_rejected_total": 80.0
+        }
+      },
+      {
+        "name": "unknown_topic_is_admitted_and_initial_order_matters",
+        "passed": true,
+        "details": [
+          {
+            "first_value": 0.0,
+            "first_accepted": true,
+            "first_agreement": null,
+            "final_belief": 0.0,
+            "reference": 1.0,
+            "error": 1.0
+          },
+          {
+            "first_value": 1.0,
+            "first_accepted": true,
+            "first_agreement": null,
+            "final_belief": 1.0,
+            "reference": 1.0,
+            "error": 0.0
+          }
+        ]
+      },
+      {
+        "name": "frozen_result_survives_30_input_orders_and_initializations",
+        "passed": true,
+        "details": {
+          "seeds": 30
+        }
+      }
+    ],
+    "reproducibility": {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/tmp/exp-d-c-regression-c1nwuneh/hoho-evaluation-experiments/experiments/rssi_attractor_escape/run_experiment.py",
+        "--output-dir",
+        "/tmp/exp-c-reproduce-8z4b9sws"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"execution\": \"Python synthetic; prior offer/replay_a imported unchanged\",\n  \"planned_runs\": 54,\n  \"completed_runs\": 54,\n  \"baseline_failures\": [],\n  \"trajectories\": 10167,\n  \"events\": 20130\n}\ndescending_bridge B_compliance_diagnostic None B_external_compliance D_post= 1.0 relapse_t= \ndescending_bridge C0_no_injection None control_stable_no_injection D_post= 1.0 relapse_t= \ndescending_bridge C1_ordinary_reference None C_rejection D_post= 1.0 relapse_t= \ndescending_bridge T1_single 0.25 C_rejection D_post= 1.0 relapse_t= \ndescending_bridge T1_single 0.75 E_relapse D_post= 1.0 relapse_t= 39\ndescending_bridge T1_single 1.0 E_relapse D_post= 1.0 relapse_t= 39\ndescending_bridge T2_repeated 0.25 C_rejection D_post= 1.0 relapse_t= \ndescending_bridge T2_repeated 0.75 E_relapse D_post= 1.0 relapse_t= 39\ndescending_bridge T2_repeated 1.0 E_relapse D_post= 1.0 relapse_t= 79\nstationary B_compliance_diagnostic None B_external_compliance D_post= 1.0 relapse_t= \nstationary C0_no_injection None control_stable_no_injection D_post= 1.0 relapse_t= \nstationary C1_ordinary_reference None C_rejection D_post= 1.0 relapse_t= \nstationary T1_single 0.25 C_rejection D_post= 1.0 relapse_t= \nstationary T1_single 0.75 A_genuine_revision_candidate D_post= 0.0 relapse_t= \nstationary T1_single 1.0 A_genuine_revision_candidate D_post= 0.0 relapse_t= \nstationary T2_repeated 0.25 C_rejection D_post= 1.0 relapse_t= \nstationary T2_repeated 0.75 A_genuine_revision_candidate D_post= 0.0 relapse_t= \nstationary T2_repeated 1.0 A_genuine_revision_candidate D_post= 0.0 relapse_t= \n",
+      "csv_hashes_identical": {
+        "aggregate_summary.csv": "5c72ad9b1982e819b947dc9fa3b70110848c220e655e522d1ea5ed2767443861",
+        "attractor_checks.csv": "a57b397aad85b3cf8c5db4ee5e989858dc7f0ba16b45420c60bc98dc02f01b5d",
+        "event_log.csv": "484268b305caca4d5909e2f55c83ef8d69ee7950298d41d5bfb15104fc473101",
+        "summary.csv": "0c0151e54be7e525a133d70dd24e1767b9b0d90ce1d2867f8c8c91fea9a4fa3d",
+        "trajectories.csv": "1b39a3698ccdd421f72f36cb5c49986ca8a7df8743be960b61807d0109d52c82"
+      }
+    },
+    "native_julia_executed": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "freeze_date": "2026-09-18",
+  "scientific_content_changed": false,
+  "included": [
+    "A-F experiment runners and protocols",
+    "all A-F frozen CSV result tables",
+    "F path manifest and Binary64 analysis record",
+    "A-F figures",
+    "pinned public Hoho source excerpts and their MIT license",
+    "A-F integrated synthesis and claim freeze"
+  ],
+  "publication_transforms": [
+    "CSV files larger than 1 MB stored as deterministic gzip with uncompressed SHA-256 retained",
+    "machine-specific command paths removed from the public copy of F analysis.json",
+    "absolute workspace paths removed from reports and public metadata",
+    "public navigation READMEs and portable validators added"
+  ],
+  "excluded": [
+    "private or separate Ideal E1-E8 implementation, fixtures, and tests",
+    "absolute private checkout paths and workspace snapshots",
+    "failed native-runtime search paths",
+    "machine-specific historical validation command arrays",
+    "claim-freeze support dumps containing local environment paths"
+  ],
+  "excluded_items_are_not_required_for_A_F_reproduction": true,
+  "claim_freeze_changed": false,
+  "new_experiments_added": false
+}
+

@@ -1,0 +1,6 @@
+seed,fast_run,slow_run,same_final_input,final_input,fast_D_final,slow_D_final,fast_outcome,slow_outcome,outcome_changed
+7,gradual_drift_q1.0_v1.0_orderNone_seed7,gradual_drift_q1.0_v0.025_orderNone_seed7,True,0,0.0,1.0,A_genuine_revision_candidate,E_relapse,True
+17,gradual_drift_q1.0_v1.0_orderNone_seed17,gradual_drift_q1.0_v0.025_orderNone_seed17,True,0,0.0,1.0,A_genuine_revision_candidate,E_relapse,True
+29,gradual_drift_q1.0_v1.0_orderNone_seed29,gradual_drift_q1.0_v0.025_orderNone_seed29,True,0,0.0,1.0,A_genuine_revision_candidate,E_relapse,True
+41,gradual_drift_q1.0_v1.0_orderNone_seed41,gradual_drift_q1.0_v0.025_orderNone_seed41,True,0,0.0,1.0,A_genuine_revision_candidate,E_relapse,True
+53,gradual_drift_q1.0_v1.0_orderNone_seed53,gradual_drift_q1.0_v0.025_orderNone_seed53,True,0,0.0,1.0,A_genuine_revision_candidate,E_relapse,True

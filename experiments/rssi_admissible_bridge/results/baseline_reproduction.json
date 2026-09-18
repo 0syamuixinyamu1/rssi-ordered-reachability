@@ -1,0 +1,195 @@
+{
+  "command": "python hoho-evaluation-experiments/experiments/rssi_recapture_dynamics/run_experiment.py --output-dir /tmp/exp-f-baseline-E",
+  "all_E_runs": 330,
+  "matched_CSVs": 10,
+  "csv_sha256": {
+    "attractor_checks.csv": "913c2c43c28fe744356685282102f759f580abd957710b3bd00384c9048106c5",
+    "coherence_diagnostic.csv": "7d631575f0ab24e85d1c093e5c85ac70b43d1d765e9e88ef4e217819403e887a",
+    "events.csv": "49ee7c4eeaa83127851ea20249513092a0b4eee8e04d19afca12085dce78863c",
+    "order_effects.csv": "c035784de780e2d66b3a0e6c964d13545eb2b05f342a706d06f87b5257981788",
+    "path_dependence.csv": "a1dde66db29966c16c698894e7e60a5aa55e55db704c7552b75c9424a9f5832d",
+    "recapture_thresholds.csv": "a859f2da80dec0d454ed3bed25bd59a1d69f4ab2ed0c6a6d2c29c8abb7e0c718",
+    "relapse_times.csv": "0a5c59d6117594a000ab655c725124f68cca1b408dd76317f74a920e57f936f9",
+    "sequence_summary.csv": "b7629fc448536f0aad5ef2d42ca449009257884b4a6ec0a18f71078228227bac",
+    "summary.csv": "3fa37b913aa1a9fa57ee3eba3613170b3c192709ade2d8129ec49a7b873f549f",
+    "trajectories.csv": "3a2a3d7c49b7f9bfb1ccd5af7f7148ddcede917fb7ffb9db32e962776e9cf044"
+  },
+  "representative_matches": [
+    {
+      "run_id": "abrupt_return_q1.0_vNone_orderNone_seed7",
+      "seed": "7",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.0",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "abrupt_return_q1.0_vNone_orderNone_seed17",
+      "seed": "17",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.0",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "abrupt_return_q1.0_vNone_orderNone_seed29",
+      "seed": "29",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.0",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "abrupt_return_q1.0_vNone_orderNone_seed41",
+      "seed": "41",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.0",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "abrupt_return_q1.0_vNone_orderNone_seed53",
+      "seed": "53",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.0",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "gradual_drift_q1.0_v0.025_orderNone_seed7",
+      "seed": "7",
+      "classification": "E_relapse",
+      "D_final": "1.0",
+      "time_to_relapse": "38"
+    },
+    {
+      "run_id": "gradual_drift_q1.0_v0.025_orderNone_seed17",
+      "seed": "17",
+      "classification": "E_relapse",
+      "D_final": "1.0",
+      "time_to_relapse": "38"
+    },
+    {
+      "run_id": "gradual_drift_q1.0_v0.025_orderNone_seed29",
+      "seed": "29",
+      "classification": "E_relapse",
+      "D_final": "1.0",
+      "time_to_relapse": "38"
+    },
+    {
+      "run_id": "gradual_drift_q1.0_v0.025_orderNone_seed41",
+      "seed": "41",
+      "classification": "E_relapse",
+      "D_final": "1.0",
+      "time_to_relapse": "38"
+    },
+    {
+      "run_id": "gradual_drift_q1.0_v0.025_orderNone_seed53",
+      "seed": "53",
+      "classification": "E_relapse",
+      "D_final": "1.0",
+      "time_to_relapse": "38"
+    },
+    {
+      "run_id": "gradual_drift_q1.0_v1.0_orderNone_seed7",
+      "seed": "7",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.0",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "gradual_drift_q1.0_v1.0_orderNone_seed17",
+      "seed": "17",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.0",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "gradual_drift_q1.0_v1.0_orderNone_seed29",
+      "seed": "29",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.0",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "gradual_drift_q1.0_v1.0_orderNone_seed41",
+      "seed": "41",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.0",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "gradual_drift_q1.0_v1.0_orderNone_seed53",
+      "seed": "53",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.0",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "bridge_order_q1.0_v0.025_orderascending_seed7",
+      "seed": "7",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.025000000000000022",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "bridge_order_q1.0_v0.025_orderascending_seed17",
+      "seed": "17",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.025000000000000022",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "bridge_order_q1.0_v0.025_orderascending_seed29",
+      "seed": "29",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.025000000000000022",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "bridge_order_q1.0_v0.025_orderascending_seed41",
+      "seed": "41",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.025000000000000022",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "bridge_order_q1.0_v0.025_orderascending_seed53",
+      "seed": "53",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.025000000000000022",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "bridge_order_q1.0_v0.025_ordershuffled_seed7",
+      "seed": "7",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.025000000000000022",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "bridge_order_q1.0_v0.025_ordershuffled_seed17",
+      "seed": "17",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.09999999999999998",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "bridge_order_q1.0_v0.025_ordershuffled_seed29",
+      "seed": "29",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.025000000000000022",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "bridge_order_q1.0_v0.025_ordershuffled_seed41",
+      "seed": "41",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.025000000000000022",
+      "time_to_relapse": ""
+    },
+    {
+      "run_id": "bridge_order_q1.0_v0.025_ordershuffled_seed53",
+      "seed": "53",
+      "classification": "A_genuine_revision_candidate",
+      "D_final": "0.09999999999999998",
+      "time_to_relapse": ""
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,38 @@
+{
+  "seeds": [
+    7,
+    17,
+    29,
+    41,
+    53
+  ],
+  "strength": 1.0,
+  "frequency": 1,
+  "horizon": 120,
+  "q_values": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    1.0
+  ],
+  "v_values": [
+    0.01,
+    0.025,
+    0.04,
+    0.049,
+    0.051,
+    1.0
+  ],
+  "sparse_q_values": [
+    0.75,
+    0.9,
+    1.0
+  ],
+  "noise_amplitude": 0.08,
+  "early_C_window": 10,
+  "early_C_alarm_threshold": 0.99,
+  "high_C_threshold": 0.95
+}

@@ -1,0 +1,464 @@
+[
+  {
+    "condition_id": "stationary_qNone_vNone_orderNone",
+    "family": "stationary",
+    "q_nominal": null,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "descending_bridge_qNone_vNone_orderNone",
+    "family": "descending_bridge",
+    "q_nominal": null,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "no_input_qNone_vNone_orderNone",
+    "family": "no_input",
+    "q_nominal": null,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "noisy_corrective_qNone_vNone_orderNone",
+    "family": "noisy_corrective",
+    "q_nominal": null,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "abrupt_return_q0_vNone_orderNone",
+    "family": "abrupt_return",
+    "q_nominal": 0,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "abrupt_return_q0.1_vNone_orderNone",
+    "family": "abrupt_return",
+    "q_nominal": 0.1,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "abrupt_return_q0.25_vNone_orderNone",
+    "family": "abrupt_return",
+    "q_nominal": 0.25,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "abrupt_return_q0.5_vNone_orderNone",
+    "family": "abrupt_return",
+    "q_nominal": 0.5,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "abrupt_return_q0.75_vNone_orderNone",
+    "family": "abrupt_return",
+    "q_nominal": 0.75,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "abrupt_return_q0.9_vNone_orderNone",
+    "family": "abrupt_return",
+    "q_nominal": 0.9,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "abrupt_return_q1.0_vNone_orderNone",
+    "family": "abrupt_return",
+    "q_nominal": 1.0,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0_v0.01_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0,
+    "drift_v": 0.01,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.1_v0.01_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.1,
+    "drift_v": 0.01,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.25_v0.01_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.25,
+    "drift_v": 0.01,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.5_v0.01_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.5,
+    "drift_v": 0.01,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.75_v0.01_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.75,
+    "drift_v": 0.01,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.9_v0.01_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.9,
+    "drift_v": 0.01,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q1.0_v0.01_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 1.0,
+    "drift_v": 0.01,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0_v0.025_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0,
+    "drift_v": 0.025,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.1_v0.025_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.1,
+    "drift_v": 0.025,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.25_v0.025_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.25,
+    "drift_v": 0.025,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.5_v0.025_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.5,
+    "drift_v": 0.025,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.75_v0.025_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.75,
+    "drift_v": 0.025,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.9_v0.025_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.9,
+    "drift_v": 0.025,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q1.0_v0.025_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 1.0,
+    "drift_v": 0.025,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0_v0.04_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0,
+    "drift_v": 0.04,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.1_v0.04_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.1,
+    "drift_v": 0.04,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.25_v0.04_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.25,
+    "drift_v": 0.04,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.5_v0.04_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.5,
+    "drift_v": 0.04,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.75_v0.04_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.75,
+    "drift_v": 0.04,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.9_v0.04_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.9,
+    "drift_v": 0.04,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q1.0_v0.04_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 1.0,
+    "drift_v": 0.04,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0_v0.049_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0,
+    "drift_v": 0.049,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.1_v0.049_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.1,
+    "drift_v": 0.049,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.25_v0.049_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.25,
+    "drift_v": 0.049,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.5_v0.049_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.5,
+    "drift_v": 0.049,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.75_v0.049_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.75,
+    "drift_v": 0.049,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.9_v0.049_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.9,
+    "drift_v": 0.049,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q1.0_v0.049_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 1.0,
+    "drift_v": 0.049,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0_v0.051_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0,
+    "drift_v": 0.051,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.1_v0.051_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.1,
+    "drift_v": 0.051,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.25_v0.051_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.25,
+    "drift_v": 0.051,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.5_v0.051_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.5,
+    "drift_v": 0.051,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.75_v0.051_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.75,
+    "drift_v": 0.051,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.9_v0.051_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.9,
+    "drift_v": 0.051,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q1.0_v0.051_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 1.0,
+    "drift_v": 0.051,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0_v1.0_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0,
+    "drift_v": 1.0,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.1_v1.0_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.1,
+    "drift_v": 1.0,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.25_v1.0_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.25,
+    "drift_v": 1.0,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.5_v1.0_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.5,
+    "drift_v": 1.0,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.75_v1.0_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.75,
+    "drift_v": 1.0,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q0.9_v1.0_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 0.9,
+    "drift_v": 1.0,
+    "order": null
+  },
+  {
+    "condition_id": "gradual_drift_q1.0_v1.0_orderNone",
+    "family": "gradual_drift",
+    "q_nominal": 1.0,
+    "drift_v": 1.0,
+    "order": null
+  },
+  {
+    "condition_id": "alternating_q0_vNone_orderNone",
+    "family": "alternating",
+    "q_nominal": 0,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "alternating_q0.1_vNone_orderNone",
+    "family": "alternating",
+    "q_nominal": 0.1,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "alternating_q0.25_vNone_orderNone",
+    "family": "alternating",
+    "q_nominal": 0.25,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "alternating_q0.5_vNone_orderNone",
+    "family": "alternating",
+    "q_nominal": 0.5,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "alternating_q0.75_vNone_orderNone",
+    "family": "alternating",
+    "q_nominal": 0.75,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "alternating_q0.9_vNone_orderNone",
+    "family": "alternating",
+    "q_nominal": 0.9,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "alternating_q1.0_vNone_orderNone",
+    "family": "alternating",
+    "q_nominal": 1.0,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "sparse_corrective_q0.75_vNone_orderNone",
+    "family": "sparse_corrective",
+    "q_nominal": 0.75,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "sparse_corrective_q0.9_vNone_orderNone",
+    "family": "sparse_corrective",
+    "q_nominal": 0.9,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "sparse_corrective_q1.0_vNone_orderNone",
+    "family": "sparse_corrective",
+    "q_nominal": 1.0,
+    "drift_v": null,
+    "order": null
+  },
+  {
+    "condition_id": "endpoint_order_q0.5_vNone_orderR_first",
+    "family": "endpoint_order",
+    "q_nominal": 0.5,
+    "drift_v": null,
+    "order": "R_first"
+  },
+  {
+    "condition_id": "bridge_order_q1.0_v0.025_orderascending",
+    "family": "bridge_order",
+    "q_nominal": 1.0,
+    "drift_v": 0.025,
+    "order": "ascending"
+  },
+  {
+    "condition_id": "bridge_order_q1.0_v0.025_ordershuffled",
+    "family": "bridge_order",
+    "q_nominal": 1.0,
+    "drift_v": 0.025,
+    "order": "shuffled"
+  }
+]
